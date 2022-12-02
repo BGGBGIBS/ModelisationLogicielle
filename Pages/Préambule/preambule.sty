@@ -1,0 +1,51 @@
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage[utf8]{inputenc}
+\usepackage[french,english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,mathtools}
+\newtheorem{definition}{Définition}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{xcolor,color}
+\usepackage{hyperref}
+%\usepackage[addtotoc]{abstract}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{url}
+\usepackage{varioref}
+\usepackage{cleveref}
+\usepackage{hyperref}
+\usepackage{nameref}
+\usepackage{titleref}
+\usepackage{lettrine}
+\usepackage{tabto}
+\usepackage{lipsum}
+\usepackage{siunitx} % Required for alignment
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{diagbox}
+%\usepackage{tikz} % To generate the plot from csv
+%\usepackage{pgfplots}
+\sisetup{
+	round-mode          = places, % Rounds numbers
+	round-precision     = 2, % to 2 places
+}
+%header
+\renewcommand{\headrulewidth}{1pt}
+\fancyhead[C]{} 
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\rightmark}
+%footer
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[C]{\textbf{page \thepage}} 
+\fancyfoot[L]{Baptiste Grosjean}
+\fancyfoot[R]{Annéee académique 2022-2023}
+%bibilography
+\usepackage[backend=biber,natbib=true,sortcites=true,style=numeric,sorting=none]{biblatex}
+\usepackage[babel=true,autostyle=true]{csquotes}
+%\renewcommand{\thesection}{\Roman{section}}
+\author{Baptiste Grosjean}
+\title{Aide à la décision :\\ Quelle formation choisir?}
+\date{\today}

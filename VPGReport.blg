@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'VPGReport.blg'
+[55] biber-darwin:340> INFO - === Sam nov 26, 2022, 01:23:01
+[68] Biber.pm:418> INFO - Reading 'VPGReport.bcf'
+[128] Biber.pm:972> INFO - Found 11 citekeys in bib section 0
+[140] Biber.pm:4383> INFO - Processing section 0
+[148] Biber.pm:4574> INFO - Looking for bibtex file 'refs.bib' for section 0
+[150] bibtex.pm:1713> INFO - LaTeX decoding ...
+[162] bibtex.pm:1518> INFO - Found BibTeX data source 'refs.bib'
+[206] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[206] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[206] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[206] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[213] bbl.pm:654> INFO - Writing 'VPGReport.bbl' with encoding 'UTF-8'
+[216] bbl.pm:757> INFO - Output to VPGReport.bbl
+[216] Biber.pm:130> WARN - I didn't find a database entry for 'mareschal_preference_nodate' (section 0)
+[216] Biber.pm:132> INFO - WARNINGS: 1
