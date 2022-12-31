@@ -1,10 +1,16 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Langage UML\relax }}{3}{table.caption.2}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Catégories et sous-catégories de diagrammes UML\relax }}{4}{table.caption.3}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces Composants d'une classe en UML 2.5\relax }}{8}{table.caption.4}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces Types d'attributs et de leur syntaxe en UML 2.5 :\relax }}{8}{table.caption.6}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces Actions/activités internes d'un état\relax }}{11}{table.caption.9}%
+\contentsline {table}{\numberline {1.6}{\ignorespaces UML fait la distinction entre une activité et une action\relax }}{11}{table.caption.11}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Modélisation des Critères\relax }}{7}{table.caption.2}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Modélisation des Critères\relax }}{9}{table.caption.3}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Comparaison Phi de 3 actions issues de 3 catégories différentes.\relax }}{11}{table.caption.5}%
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Principaux design patterns d'objets par catégorie\relax }}{13}{table.caption.12}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Design pattern Composite\relax }}{14}{table.caption.13}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Design pattern Visitor\relax }}{16}{table.caption.14}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Design pattern Observer\relax }}{17}{table.caption.15}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Design pattern Singleton\relax }}{18}{table.caption.16}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Design pattern Decorator\relax }}{19}{table.caption.17}%
 \addvspace {10\p@ }

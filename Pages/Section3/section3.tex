@@ -1,44 +1,55 @@
-\chapter{Recurrence et Induction}\label{sec:recurenceinduction}
+\begin{minipage}{0.5\textwidth}
+\begin{tikzpicture}[node distance = 10cm, y = 3cm]
 
-\begin{table}[h!]
-	%\centering
-	\begin{center}
-		\caption{Modélisation des Critères}
-		\label{tbl:modélisation}
-		\begin{tabular}{c|c|cccccc}
-			%\multicolumn{2}{c}{} &\multicolumn{4}{c}{Modélisation des Critères} \\
-			\toprule
-			\multicolumn{2}{c}{\slashbox{Critères}{Échelles}}&\multicolumn{3}{c}{Qualitatif} & \multicolumn{2}{c}{Quantitatif} & \\
-			%\multicolumn{2}{l}{Types d'échelles:} &\multicolumn{3}{c}{Qualitatif} & \multicolumn{2}{c}{Quantitatif} & \\
-			\cmidrule(lr){3-5} \cmidrule(lr){6-7}
-			%\cline{3-7}
-			\multicolumn{2}{l}{Fonctions de préférences:}  & Usuel & À Paliers & En U & Linéaire & En V & Gaussienne\\
-			\cmidrule(lr){3-3}\cmidrule(lr){4-4}\cmidrule(lr){5-5}\cmidrule(lr){6-6}\cmidrule(lr){7-7}\cmidrule(lr){8-8}
-			\cmidrule{1-2}
-			\multirow{1}{*}{Économiques}
-			& Minerval		&   &          &   & Q=500 P=1500 &       & \\
-			%\midrule
-            \cmidrule{1-2} \cmidrule(lr){3-3}\cmidrule(lr){4-4}\cmidrule(lr){5-5}\cmidrule(lr){6-6}\cmidrule(lr){7-7}\cmidrule(lr){8-8}
-			\multirow{3}{*}{Difficultés} 
-			& Durée 		&   &          &   & Q=2 P=4      &       & \\
-			& Autonomie  	&   & Q=1 P=2  &   &              &       & \\
-			& Exigences 	&   & Q=1 P=2  &   &              &       & \\
-			%\midrule
-            \cmidrule{1-2} \cmidrule(lr){3-3}\cmidrule(lr){4-4}\cmidrule(lr){5-5}\cmidrule(lr){6-6}\cmidrule(lr){7-7}\cmidrule(lr){8-8}
-			\multirow{5}{*}{Perspectives} 
-			& Sécurité 		&   & Q=0 P=1  &   &              &       & \\
-			& Crédits 		&   &          &   &              & P=30  & \\
-			& Employabilité &   & Q=1 P=2  &   &              &       & \\
-			& Salaire 		&   &          &   &              & P=200 & \\
-			& Niveau 		&   &          &   &              & P=1   & \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
-\end{table}
+\node (visitor) [classe] {
+\textbf{Visitor} \\
+\textit{attribut1: Type1} \\
+\textit{attribut2: Type2} \\
+\textit{attribut3: Type3} \\
+\textit{attribut4: Type4} \\
+\textbf{+ opération1(arg1: Type1, arg2: Type2): Type3} \\
+\textbf{+ opération2(arg1: Type1): Type4} \\
+\textbf{+ visit(ConcreteElement): void}
+};
 
-\subsection{Recurrence}\label{subsec:recurrence}
+\node (concretevisitor) [classe, below of=visitor] {
+\textbf{ConcreteVisitor} \\
+\textit{attribut1: Type1} \\
+\textit{attribut2: Type2} \\
+\textit{attribut3: Type3} \\
+\textit{attribut4: Type4} \\
+\textbf{+ opération1(arg1: Type1, arg2: Type2): Type3} \\
+\textbf{+ opération2(arg1: Type1): Type4} \\
+\textbf{+ visit(ConcreteElement): void}
+};
 
-\subsection{Induction Faible}\label{subsec:inductionfaible}
+\node (element) [classe, right of=visitor] {
+\textbf{Element} \\
+\textit{attribut1: Type1} \\
+\textit{attribut2: Type2} \\
+\textit{attribut3: Type3} \\
+\textit{attribut4: Type4} \\
+\textbf{+ opération1(arg1: Type1, arg2: Type2): Type3} \\
+\textbf{+ opération2(arg1: Type1): Type4} \\
+\textbf{+ accept(Visitor): void}
+};
 
-\subsection{Induction Forte}\label{subsec:inductionforte}
-\subsection{Principes d'induction}\label{subsec:principesdinduction}
+\node (concreteelement) [classe, below of=element] {
+\textbf{ConcreteElement} \\
+\textit{attribut1: Type1} \\
+\textit{attribut2: Type2} \\
+\textit{attribut3: Type3} \\
+\textit{attribut4: Type4} \\
+\textbf{+ opération1(arg1: Type1, arg2: Type2): Type3} \\
+\textbf{+ opération2(arg1: Type1): Type4} \\
+\textbf{+ accept(Visitor): void}
+};
+
+% Edges
+\draw [generalization] (concretevisitor.north) -- (visitor.south);
+\draw [generalization] (concreteelement.north) -- (element.south);
+\draw [association] (visitor.east) -- (element.west);
+\draw [association] (concretevisitor.east) -- (concreteelement.west);
+\draw [association] (concreteelement.west) -- (concretevisitor.east);
+\end{tikzpicture}
+\end{minipage}

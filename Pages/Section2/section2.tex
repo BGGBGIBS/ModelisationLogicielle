@@ -1,63 +1,955 @@
-\chapter{UML}\label{chap:uml}
-\begin{definition}[UML — Ubified Modeling Language]
-    UML (Unified Modeling Language)→Ensemble de notations pour décrire un système logiciel de manière visuelle. (Langage de modélisation)
+\chapter{D\'eveloppement dirig\'e par les mod\`eles}\label{chap:dev}
+
+\section{Design Patterns}\label{sec:designpatterns}
+\begin{minipage}[t]{1\textwidth}
+\begin{definition}[Design Pattern]
 \end{definition}
-Il permet la spécification, visualisation, simulation, construction, documentation des logiciels.
-Il facilite la communication et le travail en équipe.
-Il possède différents modèles pour différents points de vue. Utilise une approche orientée objet.
-\begin{itemize}
-    \item Points Forts
-    \begin{itemize}
-        \item Langage semi-formel
-        \begin{itemize}
-            \item Plus de précision
-            \item Stable
-            \item Encourage l'automatisation
-        \end{itemize}
-        \item Support de communication efficace
-        \begin{itemize}
-            \item Cadre l'analyse des besoins
-            \item Compréhension des systèmes plus facile
-            \item Langage universel (polyvalent/souple)
-        \end{itemize}
-    \end{itemize}
-    \item Points Faibles
-    \begin{itemize}
-        \item Aprentissage long
-        \item Intégration d'UML dans un processus $\implies Difficile$
-    \end{itemize}
-\end{itemize}
-\begin{table}[h!]
-	%\centering
-	\begin{center}
-		\caption{Modélisation des Critères}
-		\label{tbl:modélisation}
-		\begin{tabular}{c|c|c|c}
-			\toprule
-			\multirow{2}{*}{Points Forts}\multirow{3}{*}{Langage semi-formel}
-			& Minerval		      \\
-            & Minerval		      \\
-            & Minerval		      \\
-			%\midrule
-            \cmidrule{1-2} \cmidrule(lr){3-3}\cmidrule(lr){4-4}
-			\multirow{1}{*}{Points Faibles}\multirow{3}{*}{Support de communication efficace} 
-			& Durée 		      \\
-			& Autonomie  	      \\
-			& Exigences 	      \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
+\begin{table}[H]
+\caption{Principaux design patterns d'objets par catégorie}
+\label{tbl:design_patterns}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{14em}|p{30em}}
+\toprule
+\textbf{Catégorie} & \textbf{Design patterns} & \textbf{Description} \\
+\midrule
+\multirow{4}{*}{Création} & Fabrique abstraite & Permet de déléguer la création d'objets à des sous-classes.\\
+\cmidrule(lr){2-3}
+& Prototype & Permet de créer de nouveaux objets en copiant des objets existants.\\
+\cmidrule(lr){2-3}
+& Singleton & Assure qu'une classe ne possède qu'une seule instance et fournit un accès global à celle-ci.\\
+\cmidrule(lr){2-3}
+& Builder & Sépare la construction d'un objet complexe de sa représentation, de sorte que le même processus de construction puisse créer différentes représentations.\\
+\cmidrule(lr){2-3}
+& Facteur de construction & Abstrait la création d'objets en une étape de construction séparée.\\
+\midrule
+\multirow{7}{*}{Structure} & Adaptateur & adapte l'interface d'une classe à une autre interface attendue par les clients.\\
+\cmidrule(lr){2-3}
+& Bridge & Sépare l'implémentation d'une classe de son interface, de sorte que les deux puissent être modifiées indépendamment.\\
+\cmidrule(lr){2-3}
+& Composite & Compose des objets en structures arborescentes pour représenter l'héritage partiel et laisse le client traiter de manière uniforme des objets simples et composites.\\
+\cmidrule(lr){2-3}
+& Decorator & Ajoute de nouvelles responsabilités à un objet de manière transparente.\\
+\cmidrule(lr){2-3}
+& Façade & Fournit une interface unique pour une sous-système complexe afin de le rendre plus facile à utiliser.\\
+\cmidrule(lr){2-3}
+& Flyweight & Utilise des objets partagés pour soutenir de nombreuses instances avec un état faible ou non-existent.\\
+\cmidrule(lr){2-3}
+& Poids mouche & Est un patron de conception qui vise à minimiser l'utilisation de mémoire en partageant des objets similaires au lieu de les créer indépendamment.\\
+\midrule
+\multirow{6}{*}{Comportement} & Méthode de template & Définit un schéma de traitement pour une opération en déléguant certaines étapes à des sous-classes.\\
+\cmidrule(lr){2-3}
+& Méthode de chaîne de responsabilité & Permet à un objet de passer une requête le long d'une chaîne de traitement jusqu'à ce qu'un objet la traite.\\
+\cmidrule(lr){2-3}
+& Méthode de commande & Encapsule une requête sous la forme d'un objet, ce qui permet de paramétrer des objets avec différentes requêtes, de les mettre dans une file d'attente, et de supporter l'annulation et le retour en arrière.\\
+\cmidrule(lr){2-3}
+& Méthode d'observer & Définit une relation un-à-plusieurs entre des objets de sorte que lorsqu'un objet change d'état, tous ses dépendants en sont notifiés et mis à jour automatiquement.\\
+\cmidrule(lr){2-3}
+& Méthode de récepteur & Encapsule la logique de traitement d'une requête dans un objet, de sorte qu'une requête peut être passée à différents objets de manière interchangeable.\\
+\cmidrule(lr){2-3}
+& Méthode de visiteur & Représente une opération à effectuer sur les éléments d'une structure de données hiérarchique.\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\end{minipage}
+
+
+\newpage
+\subsection{Composite}\label{subsec:composite}
+\begin{definition}[Design Pattern Composite]
+\end{definition}
+\begin{table}[H]
+\caption{Design pattern Composite}
+\label{tbl:design_patterns_composite}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{\textwidth}}
+\toprule
+\textbf{But} & Permettre la manipulation d'une hiérarchie de objets de manière uniforme, que ces objets soient des composants simples ou des groupes de composants.\\
+\cmidrule(lr){1-2}
+\textbf{Quand} & Lorsque vous avez une hiérarchie d'objets et que vous voulez traiter chaque objet de manière uniforme, qu'il s'agisse d'un composant simple ou d'un groupe de composants.\\
+\cmidrule(lr){1-2}
+\textbf{Comment} & Le design pattern Composite définit une interface pour les composants de la hiérarchie, qui peut être implémentée par des classes de composants simples ou de groupes de composants. Cela permet de traiter chaque objet de la hiérarchie de manière uniforme, indépendamment de son type.\\
+\cmidrule(lr){1-2}
+\textbf{Avantages} & Permet de traiter les composants simples et les groupes de composants de manière uniforme. Rend le code plus lisible et facilite l'ajout de nouvelles fonctionnalités.\\
+\cmidrule(lr){1-2}
+\textbf{Inconvénients} & Nécessite la création d'une interface pour les composants de la hiérarchie. Peut rendre le code plus complexe et difficile à comprendre si utilisé de manière excessive.\\
+\cmidrule(lr){1-2}
+\multirow{2}{*}{\textbf{Exemples}} & 
+\hspace{4mm}
+\begin{minipage}[tl]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Modélisation d'une structure hiérarchique :
+Le design pattern Composite peut être utilisé pour modéliser une structure hiérarchique de données, comme par exemple l'arborescence d'un système de fichiers. Dans ce cas, chaque dossier peut être considéré comme un "composite", qui peut contenir à la fois des fichiers et d'autres dossiers (qui sont eux aussi des composites). Le composite "racine" de l'arborescence est la racine du système de fichiers. 
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+public abstract class FileSystemNode {
+  protected String name;
+
+  public FileSystemNode(String name) {
+    this.name = name;
+  }
+
+  public abstract int getSize();
+}
+
+public class File extends FileSystemNode {
+  private int size;
+
+  public File(String name, int size) {
+    super(name);
+    this.size = size;
+  }
+
+  @Override
+  public int getSize() {
+    return size;
+  }
+}
+
+public class Directory extends FileSystemNode {
+  private List<FileSystemNode> children;
+
+  public Directory(String name) {
+    super(name);
+    children = new ArrayList<>();
+  }
+
+  public void addNode(FileSystemNode node) {
+    children.add(node);
+  }
+
+  @Override
+  public int getSize() {
+    int size = 0;
+    for (FileSystemNode child : children) {
+      size += child.getSize();
+    }
+    return size;
+  }
+}
+
+// Exemple d'utilisation :
+Directory root = new Directory("root");
+Directory home = new Directory("home");
+Directory user = new Directory("user");
+
+File file1 = new File("file1.txt", 100);
+File file2 = new File("file2.txt", 200);
+File file3 = new File("file3.txt", 300);
+
+user.addNode(file1);
+user.addNode(file2);
+home.addNode(user);
+home.addNode(file3);
+root.addNode(home);
+
+System.out.println("Taille totale du répertoire racine : " + root.getSize() + " octets");
+\end{lstlisting}
+\end{minipage}
+\end{minipage}
+%\\
+%\cmidrule(lr){2-2}
+%& 
+\hspace{6mm}
+\begin{minipage}[tr]{0.5\textwidth}
+%\begin{minipage}[t]{1\textwidth}
+Arbre de décision en intelligence artificielle :
+Le design pattern Composite peut être utilisé pour modéliser un arbre de décision en intelligence artificielle. Dans ce cas, chaque nœud de l'arbre peut être considéré comme un "composite", qui peut contenir à la fois des feuilles (qui sont des éléments "feuilles" de l'arbre) et d'autres nœuds (qui sont eux aussi des composites). Le composite "racine" de l'arbre est le nœud racine de l'arbre de décision.
+%\end{minipage}
+%\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+// Classe abstraite pour représenter un nœud de l'arbre de décision
+public abstract class DecisionTreeNode {
+  // Méthode abstraite pour évaluer le nœud de l'arbre de décision
+  public abstract boolean evaluate();
+}
+
+// Classe concrète pour représenter un nœud "composite" de l'arbre de décision
+public class CompositeDecisionTreeNode extends DecisionTreeNode {
+  private List<DecisionTreeNode> children; // Liste des enfants du nœud
+
+  // Constructeur pour initialiser la liste des enfants
+  public CompositeDecisionTreeNode(List<DecisionTreeNode> children) {
+    this.children = children;
+  }
+
+  // Méthode d'évaluation de l'arbre de décision qui parcourt tous les enfants et renvoie true si tous les enfants renvoient true
+  @Override
+  public boolean evaluate() {
+    for (DecisionTreeNode child : children) {
+      if (!child.evaluate()) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+
+// Classe concrète pour représenter une feuille de l'arbre de décision
+public class LeafDecisionTreeNode extends DecisionTreeNode {
+  private boolean value; // Valeur de la feuille
+
+  // Constructeur pour initialiser la valeur de la feuille
+  public LeafDecisionTreeNode(boolean value) {
+    this.value = value;
+  }
+
+  // Méthode d'évaluation de l'arbre de décision qui renvoie la valeur de la feuille
+  @Override
+  public boolean evaluate() {
+    return value;
+  }
+}
+
+// Exemple d'utilisation de l'arbre de décision
+DecisionTreeNode root = new CompositeDecisionTreeNode(Arrays.asList(
+  new LeafDecisionTreeNode(true),
+  new LeafDecisionTreeNode(true),
+  new LeafDecisionTreeNode(false)
+));
+
+boolean result = root.evaluate(); // false
+\end{lstlisting}
+%\end{minipage}
+\end{minipage}
+%\end{minipage}
+\\
+\cmidrule(lr){1-2}
+\textbf{Structure} &
+\begin{tikzpicture}[node distance = 6cm]
+\node(Composite) [classe]{
+ \textbf{Composite}\\
+ };
+\node(Leaf) [classe, right of=Composite] {
+\textbf{Leaf}\\
+};
+\node(SubComposite) [classe, below of=Leaf, yshift=4cm] {
+\textbf{Composite}\\
+};
+\node(SubLeaf) [classe, right of=Leaf] {
+\textbf{Leaf}\\
+};
+\node(SubSubComposite) [classe, below of=SubLeaf, yshift=4cm] {
+\textbf{Composite}\\
+};
+\draw[generalization] (Leaf.west) -- (Composite.est);
+\draw[generalization] (SubComposite.west) -- (Composite.east);
+\draw[generalization] (SubLeaf.west) -- (SubComposite.est);
+\draw[generalization] (SubSubComposite.west) -- (SubComposite.east);
+\end{tikzpicture} 
+\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
 \end{table}
 
 
-\section{Diagramme de cas d'utilisation}\label{sec:diagrammecasdutilisation}
 
-\section{Diagramme d'Activités}\label{sec:diagrammedactivite}
+\newpage
+\subsection{Visitor}\label{subsec:visitor}
+\begin{minipage}[t]{1\textwidth}
+\begin{definition}[Design Pattern Visitor]
+\end{definition}
 
-\section{Diagramme d'interaction}\label{sec:diagrammedinteraction}
 
-\section{Diagramme de Classes}\label{sec:diagrammedeclasses}
+\begin{table}[H]
+\caption{Design pattern Visitor}
+\label{tbl:design_patterns_visitor}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{\textwidth}}
+\toprule
+\textbf{But} & Permettre l'ajout de fonctionnalités à une hiérarchie de classes sans en changer la structure. \\
+\cmidrule(lr){1-2}
+\textbf{Quand} & Lorsque vous avez une hiérarchie de classes et que vous voulez ajouter des fonctionnalités à chaque classe de cette hiérarchie sans en changer la structure. \\
+\cmidrule(lr){1-2}
+\textbf{Comment} & Le design pattern Visitor définit une nouvelle opération à chaque classe de la hiérarchie, qui accepte un visiteur comme argument. Le visiteur contient les fonctionnalités à ajouter. Lorsqu'une classe de la hiérarchie accepte un visiteur, elle appelle la méthode correspondante de ce visiteur. \\
+\cmidrule(lr){1-2}
+\textbf{Avantages} & Permet d'ajouter de nouvelles fonctionnalités sans changer la structure de la hiérarchie de classes. Sépare les fonctionnalités ajoutées de la hiérarchie de classes, ce qui peut rendre le code plus lisible et faciliter l'extension. \\
+\cmidrule(lr){1-2}
+\textbf{Inconvénients} & Nécessite la création d'une nouvelle classe pour chaque fonctionnalité à ajouter. Peut rendre le code plus complexe et difficile à comprendre si utilisé de manière excessive. \\
+\cmidrule(lr){1-2}
+\multirow{2}{*}{\textbf{Exemples}} & 
+\hspace{4mm}
+\begin{minipage}[tl]{0.5\textwidth}
+%\begin{minipage}[t]{1\textwidth}
+Imaginons que vous avez une hiérarchie de classes représentant des formes géométriques (cercle, carré, triangle, etc.). Vous souhaitez ajouter la fonctionnalité de calcul de l'aire de chaque forme sans changer la structure de la hiérarchie de classes. Vous pouvez utiliser le design pattern Visitor pour créer une classe Visitor qui contient une méthode pour chaque type de forme. Lorsque la forme accepte le visiteur, elle appelle la méthode correspondante de ce visiteur pour calculer son aire.  
+%\end{minipage}
+%\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+public interface Shape {
+  void accept(Visitor visitor);
+}
 
-\section{Diagramme de Séquences}\label{sec:diagrammedesequence}
+public class Circle implements Shape {
+  private double radius;
+  
+  public Circle(double radius) {
+    this.radius = radius;
+  }
+  
+  public double getRadius() {
+    return radius;
+  }
+  
+  @Override
+  public void accept(Visitor visitor) {
+    visitor.visit(this);
+  }
+}
 
-\section{Diagramme d'États Comportementaux}\label{sec:diagrammedetatcomportementaux}
+public class Square implements Shape {
+  private double side;
+  
+  public Square(double side) {
+    this.side = side;
+  }
+  
+  public double getSide() {
+    return side;
+  }
+  
+  @Override
+  public void accept(Visitor visitor) {
+    visitor.visit(this);
+  }
+}
+
+public class Triangle implements Shape {
+  private double base;
+  private double height;
+  
+  public Triangle(double base, double height) {
+    this.base = base;
+    this.height = height;
+  }
+  
+  public double getBase() {
+    return base;
+  }
+  
+  public double getHeight() {
+    return height;
+  }
+  
+  @Override
+  public void accept(Visitor visitor) {
+    visitor.visit(this);
+  }
+}
+
+public interface Visitor {
+  void visit(Circle circle);
+  void visit(Square square);
+  void visit(Triangle triangle);
+}
+
+public class AreaVisitor implements Visitor {
+  @Override
+  public void visit(Circle circle) {
+    double radius = circle.getRadius();
+    double area = Math.PI * radius * radius;
+    System.out.println("Area of circle: " + area);
+  }
+  
+  @Override
+  public void visit(Square square) {
+    double side = square.getSide();
+    double area = side * side;
+    System.out.println("Area of square: " + area);
+  }
+  
+  @Override
+  public void visit(Triangle triangle) {
+    double base = triangle.getBase();
+    double height = triangle.getHeight();
+    double area = 0.5 * base * height;
+    System.out.println("Area of triangle: " + area);
+  }
+}
+
+Circle circle = new Circle(5);
+Square square = new Square(10);
+Triangle triangle = new Triangle(5, 10);
+
+Visitor visitor = new AreaVisitor();
+circle.accept(visitor);
+square.accept(visitor);
+triangle.accept(visitor);
+\end{lstlisting}
+%\end{minipage}
+\end{minipage}
+%\\
+%\cmidrule(lr){2-2}
+%& 
+\hspace{6mm}
+\begin{minipage}[tr]{0.5\textwidth}
+%\begin{minipage}[t]{1\textwidth}
+Imaginons que vous avez une hiérarchie de classes représentant des employés dans une entreprise (directeur, manager, employé). Vous souhaitez ajouter la fonctionnalité de calcul de la rémunération de chaque employé sans changer la structure de la hiérarchie de classes. Vous pouvez utiliser le design pattern Visitor pour créer une classe Visitor qui contient une méthode pour chaque type d'employé. Lorsque l'employé accepte le visiteur, il appelle la méthode correspondante de ce visiteur pour calculer sa rémunération.  
+%\end{minipage}
+%\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+// Classe abstraite représentant un employé
+abstract class Employee {
+  // Attributs de l'employé (nom, salaire, etc.)
+  protected String name;
+  protected double salary;
+
+  // Constructeur prenant en paramètre le nom et le salaire de l'employé
+  public Employee(String name, double salary) {
+    this.name = name;
+    this.salary = salary;
+  }
+
+  // Méthode abstraite acceptant un visiteur
+  public abstract void accept(Visitor visitor);
+}
+
+// Classe représentant un directeur
+class Director extends Employee {
+  public Director(String name, double salary) {
+    super(name, salary);
+  }
+
+  // Acceptation du visiteur
+  @Override
+  public void accept(Visitor visitor) {
+    visitor.visit(this);
+  }
+}
+
+// Classe représentant un manager
+class Manager extends Employee {
+  public Manager(String name, double salary) {
+    super(name, salary);
+  }
+
+  // Acceptation du visiteur
+  @Override
+  public void accept(Visitor visitor) {
+    visitor.visit(this);
+  }
+}
+
+// Classe représentant un employé
+class Employee extends Employee {
+  public Employee(String name, double salary) {
+    super(name, salary);
+  }
+
+  // Acceptation du visiteur
+  @Override
+  public void accept(Visitor visitor) {
+    visitor.visit(this);
+  }
+}
+
+// Interface représentant un visiteur
+interface Visitor {
+  // Méthode de visite pour chaque type d'employé
+  void visit(Director director);
+  void visit(Manager manager);
+  void visit(Employee employee);
+}
+
+// Classe représentant un visiteur calculant la rémunération des employés
+class SalaryCalculatorVisitor implements Visitor {
+  // Attributs stockant la rémunération totale pour chaque type d'employé
+  private double totalDirectorSalary;
+  private double totalManagerSalary;
+  private double totalEmployeeSalary;
+
+  // Méthodes de visite pour chaque type d'employé
+  @Override
+  public void visit(Director director) {
+    totalDirectorSalary += director.salary;
+  }
+
+  @Override
+  public void visit(Manager manager) {
+    totalManagerSalary += manager.salary;
+  }
+
+  @Override
+  public void visit(Employee employee) {
+    totalEmployeeSalary += employee.salary;
+  }
+}
+\end{lstlisting}
+%\end{minipage}
+\end{minipage}
+\\
+\cmidrule(lr){1-2}
+
+\textbf{Structure} & 
+
+\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\end{minipage}
+
+
+\newpage
+\subsection{Observer}\label{subsec:observer}
+\begin{table}[H]
+\caption{Design pattern Observer}
+\label{tbl:design_patterns_observer}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{\textwidth}}
+\toprule
+\textbf{But} & Permettre à un objet de suivre l'état d'un autre objet et de recevoir une notification en cas de changement d'état.\\
+\cmidrule(lr){1-2}
+\textbf{Quand} & Lorsque vous voulez que plusieurs objets restent synchronisés et reçoivent une notification en cas de changement d'état de l'un d'entre eux.\\
+\cmidrule(lr){1-2}
+\textbf{Comment} & Le design pattern Observer définit une relation de type "un-vers-plusieurs" entre un objet observé (Observable) et plusieurs objets observateurs (Observer). L'Observable envoie une notification aux Observer en cas de changement d'état. Les Observer peuvent alors mettre à jour leur état en fonction de celui de l'Observable.\\
+\cmidrule(lr){1-2}
+\textbf{Avantages} & Permet de maintenir la synchronisation entre plusieurs objets sans avoir à connaître leurs implémentations. Facilite l'ajout ou la suppression d'Observer sans avoir à modifier l'Observable.\\
+\cmidrule(lr){1-2}
+\textbf{Inconvénients} & Nécessite la création de liens de dépendance entre les objets observés et les objets observateurs. Peut rendre le code plus complexe si utilisé de manière excessive.\\
+\cmidrule(lr){1-2}
+\textbf{Exemples} & 
+\hspace{4mm}
+\begin{minipage}[tl]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Mise à jour en temps réel d'un tableau de bord d'un système de gestion de projets. Lorsque des données sont mises à jour dans le système, un observateur est déclenché et met à jour le tableau de bord en conséquence.   
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+import java.util.ArrayList;
+import java.util.List;
+
+// Classe Observateur
+interface Observateur {
+  public void update(int nouvelleDonnee);
+}
+
+// Classe Sujet
+class Sujet {
+  private List<Observateur> observateurs = new ArrayList<Observateur>();
+  private int donnee;
+
+  public void ajouterObservateur(Observateur observateur) {
+    observateurs.add(observateur);
+  }
+
+  public void supprimerObservateur(Observateur observateur) {
+    observateurs.remove(observateur);
+  }
+
+  public void notifierObservateurs() {
+    for (Observateur observateur : observateurs) {
+      observateur.update(donnee);
+    }
+  }
+
+  public void mettreAJourDonnee(int nouvelleDonnee) {
+    donnee = nouvelleDonnee;
+    notifierObservateurs();
+  }
+}
+
+// Classe Observateur concrète
+class TableauDeBord implements Observateur {
+  private Sujet sujet;
+
+  public TableauDeBord(Sujet sujet) {
+    this.sujet = sujet;
+    sujet.ajouterObservateur(this);
+  }
+
+  @Override
+  public void update(int nouvelleDonnee) {
+    // Mise à jour du tableau de bord avec la nouvelle donnée
+  }
+}
+
+// Classe de test
+class Test {
+  public static void main(String[] args) {
+    Sujet sujet = new Sujet();
+    TableauDeBord tableauDeBord = new TableauDeBord(sujet);
+
+    sujet.mettreAJourDonnee(10); // Le tableau de bord sera mis à jour avec la nouvelle donnée
+  }
+}
+
+\end{lstlisting} 
+\end{minipage}
+\end{minipage}
+%\\
+%\cmidrule(lr){2-2}
+%& 
+\hspace{6mm}
+\begin{minipage}[tr]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Notification d'un utilisateur lorsqu'un nouveau message est reçu dans une application de messagerie. L'application est configurée pour observer les nouveaux messages et en informer l'utilisateur en envoyant une notification push.  
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+import java.util.ArrayList;
+import java.util.List;
+
+// Classe représentant un utilisateur de l'application de messagerie
+class User {
+  private String name;
+  private List<Message> messages;
+
+  public User(String name) {
+    this.name = name;
+    this.messages = new ArrayList<>();
+  }
+
+  // Méthode appelée lorsqu'un nouveau message est reçu
+  public void receiveMessage(Message message) {
+    messages.add(message);
+    // Envoi de la notification push à l'utilisateur
+    sendPushNotification();
+  }
+
+  // Méthode permettant d'envoyer une notification push à l'utilisateur
+  public void sendPushNotification() {
+    System.out.println("Notification envoyée à l'utilisateur " + name + " : nouveau message reçu !");
+  }
+}
+
+// Classe représentant un message dans l'application de messagerie
+class Message {
+  private String content;
+
+  public Message(String content) {
+    this.content = content;
+  }
+
+  public String getContent() {
+    return content;
+  }
+}
+
+// Classe représentant l'application de messagerie
+class MessagingApp {
+  private List<User> users;
+  private List<Message> messages;
+
+  public MessagingApp() {
+    this.users = new ArrayList<>();
+    this.messages = new ArrayList<>();
+  }
+
+  // Méthode permettant d'ajouter un utilisateur à l'application
+  public void addUser(User user) {
+    users.add(user);
+  }
+
+  // Méthode permettant d'envoyer un message à tous les utilisateurs de l'application
+  public void sendMessage(Message message) {
+    messages.add(message);
+    // Notification de tous les utilisateurs de l'application
+    for (User user : users) {
+      user.receiveMessage(message);
+    }
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    // Création de l'application de messagerie
+    MessagingApp messagingApp = new MessagingApp();
+
+    // Création de deux utilisateurs
+    User user1 = new User("Alice");
+    User user2 = new User("Bob");
+
+    // Ajout des utilisateurs à l'application de messagerie
+    messagingApp.addUser(user1);
+    messagingApp.addUser(user2);
+
+    // Envoi d'un message à tous les utilisateurs de l'application
+    messagingApp.sendMessage(new Message("Bonjour, comment vas-tu ?"));
+  }
+}
+
+\end{lstlisting}
+\end{minipage}
+\end{minipage}
+\\
+\cmidrule(lr){1-2}
+\textbf{Structure} & \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\newpage
+\subsection{Singleton}
+\begin{table}[H]
+\caption{Design pattern Singleton}
+\label{tbl:design_pattern_singleton}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{\textwidth}}
+\toprule
+\textbf{But} & Garantir qu'une classe ne peut être instanciée qu'une seule fois, en maintenant un point d'accès global à cette instance.\\
+\cmidrule(lr){1-2}
+\textbf{Quand} & Lorsque vous voulez que votre application n'ait qu'une seule instance d'une classe particulière, par exemple pour gérer l'accès à une base de données ou à une ressource partagée.\\
+\cmidrule(lr){1-2}
+\textbf{Comment} & Le design pattern Singleton définit une méthode d'accès global à une instance unique de la classe. Cette instance est créée au moment de la première utilisation de la méthode d'accès. Les autres appels à cette méthode retourneront simplement la référence à l'instance existante.\\
+\cmidrule(lr){1-2}
+\textbf{Avantages} & Permet de garantir qu'il n'existe qu'une seule instance d'une classe donnée dans l'application. Facilite le partage de ressources et la gestion de l'accès à celles-ci.\\
+\cmidrule(lr){1-2}
+\textbf{Inconvénients} & Peut rendre le code difficile à tester, car il n'est pas possible de créer plusieurs instances de la classe pour les tests. Peut également rendre le code plus difficile à maintenir si utilisé de manière excessive.\\
+\cmidrule(lr){1-2}
+\textbf{Exemples} &
+\hspace{4mm}
+\begin{minipage}[tl]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Gestionnaire de connexion à une base de données : vous souhaitez que votre application n'ait qu'une seule connexion à la base de données afin d'éviter les conflits et d'optimiser les performances. Vous pouvez utiliser le design pattern singleton pour créer un objet unique qui gère la connexion à la base de données et qui est accessible depuis n'importe quelle partie de votre application.
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+public class GestionnaireConnexionBDD {
+  private static GestionnaireConnexionBDD instance = null;
+  private Connection connexion = null;
+
+  private GestionnaireConnexionBDD() {
+    // Initialisation de la connexion à la base de données
+  }
+
+  public static GestionnaireConnexionBDD getInstance() {
+    if (instance == null) {
+      instance = new GestionnaireConnexionBDD();
+    }
+    return instance;
+  }
+
+  public Connection getConnexion() {
+    return connexion;
+  }
+}
+
+
+GestionnaireConnexionBDD gestionnaire = GestionnaireConnexionBDD.getInstance();
+Connection connexion = gestionnaire.getConnexion();
+
+\end{lstlisting} 
+\end{minipage}
+\end{minipage}
+%\\
+%\cmidrule(lr){2-2}
+%& 
+\hspace{6mm}
+\begin{minipage}[tr]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Gestionnaire de fichiers de configuration : vous avez un fichier de configuration qui est utilisé par plusieurs parties de votre application et vous souhaitez qu'il soit accessible de manière simple et rapide. Vous pouvez utiliser le design pattern singleton pour créer un objet unique qui gère l'accès au fichier de configuration et qui est accessible depuis n'importe quelle partie de votre application.
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+import java.util.Properties;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class ConfigurationManager {
+  private static ConfigurationManager instance;
+  private Properties config;
+
+  private ConfigurationManager() {
+    config = new Properties();
+    try {
+      config.load(new FileInputStream("config.properties"));
+    } catch (IOException e) {
+      // Gérer l'exception
+    }
+  }
+
+  public static ConfigurationManager getInstance() {
+    if (instance == null) {
+      instance = new ConfigurationManager();
+    }
+    return instance;
+  }
+
+  public String getProperty(String key) {
+    return config.getProperty(key);
+  }
+}
+
+String property = ConfigurationManager.getInstance().getProperty("key");
+
+
+\end{lstlisting}
+\end{minipage}
+\end{minipage}
+\\
+\cmidrule(lr){1-2}
+\textbf{Structure} & 
+
+\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+\newpage
+\subsection{Decorator}
+\begin{table}[H]
+\caption{Design pattern Decorator}
+\label{tbl:design_pattern_decorator}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{\textwidth}}
+\toprule
+\textbf{But} & Ajouter dynamiquement de nouvelles fonctionnalités à un objet sans altérer sa structure.\\
+\cmidrule(lr){1-2}
+\textbf{Quand} & Lorsque vous voulez ajouter de nouvelles fonctionnalités à un objet de manière flexible, sans avoir à utiliser une héritage complexe ou à créer de nouvelles classes pour chaque combinaison de fonctionnalités.\\
+\cmidrule(lr){1-2}
+\textbf{Comment} & Le design pattern Decorator définit une interface commune pour les objets à décorer et une classe de base pour les décorateurs qui enveloppent ces objets. Les décorateurs ajoutent des fonctionnalités supplémentaires en étendant la classe de base des décorateurs et en implémentant l'interface commune. Les objets peuvent alors être décorés en ajoutant successivement des décorateurs qui ajoutent les fonctionnalités souhaitées.\\
+\cmidrule(lr){1-2}
+\textbf{Avantages} & Permet d'ajouter de nouvelles fonctionnalités à un objet de manière flexible et sans altérer sa structure. Facilite la modification du comportement d'un objet à runtime.\\
+\cmidrule(lr){1-2}
+\textbf{Inconvénients} & Peut rendre le code plus complexe et difficile à comprendre, en particulier si de nombreux décorateurs sont utilisés.\\
+\cmidrule(lr){1-2}
+\textbf{Exemples} & 
+\hspace{4mm}
+\begin{minipage}[tl]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Un système de commande de restaurant en ligne qui permet aux clients de personnaliser leurs commandes en ajoutant des ingrédients supplémentaires. Le design pattern Decorator peut être utilisé pour ajouter des fonctionnalités à l'objet "commande" de manière dynamique, en créant des classes décoratrices pour chaque ingrédient supplémentaire (par exemple, "oeuf", "bacon", "oignon"). Ces classes décoratrices hériteront de la classe de base "commande" et ajouteront leur propre comportement (par exemple, augmenter le prix de la commande) lorsque la commande est créée.
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+// Classe de base "Commande"
+public abstract class Commande {
+protected double prix;
+
+public abstract double getPrix();
+}
+
+// Classe décoratrice "Ingredient"
+public abstract class Ingredient extends Commande {
+protected Commande commande;
+
+public Ingredient(Commande commande) {
+this.commande = commande;
+}
+}
+
+// Classe décoratrice concrète "Oeuf"
+public class Oeuf extends Ingredient {
+public Oeuf(Commande commande) {
+super(commande);
+}
+
+@Override
+public double getPrix() {
+return commande.getPrix() + 1.50;
+}
+}
+
+// Classe décoratrice concrète "Bacon"
+public class Bacon extends Ingredient {
+public Bacon(Commande commande) {
+super(commande);
+}
+
+@Override
+public double getPrix() {
+return commande.getPrix() + 2.00;
+}
+}
+
+// Classe décoratrice concrète "Oignon"
+public class Oignon extends Ingredient {
+public Oignon(Commande commande) {
+super(commande);
+}
+
+@Override
+public double getPrix() {
+return commande.getPrix() + 0.75;
+}
+}
+
+// Exemple d'utilisation
+Commande commandeDeBase = new Commande();
+Commande commandePersonnalisee = new Oeuf(new Bacon(new Oignon(commandeDeBase)));
+System.out.println("Prix de la commande : " + commandePersonnalisee.getPrix() + "€");
+\end{lstlisting}
+\end{minipage}
+
+\end{minipage}
+%
+%
+%
+\hspace{6mm}
+\begin{minipage}[tr]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Un logiciel de retouche photo qui permet aux utilisateurs de ajouter des filtres et des effets à leurs photos. Le design pattern Decorator peut être utilisé pour ajouter des fonctionnalités à l'objet "photo" de manière dynamique, en créant des classes décoratrices pour chaque effet (par exemple, "filtre sépia", "flou", "couleur inversée"). Ces classes décoratrices hériteront de la classe de base "photo" et ajouteront leur propre comportement (par exemple, appliquer le filtre ou l'effet à l'image) lorsque la photo est modifiée.
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+// Classe de base "Photo"
+public abstract class Photo {
+protected String description;
+
+public String getDescription() {
+return description;
+}
+
+public abstract void modify();
+}
+
+// Classe décoratrice "FiltreSepia"
+public class FiltreSepia extends Photo {
+public FiltreSepia(Photo photo) {
+description = "Filtre sépia";
+}
+
+public void modify() {
+// Appliquer le filtre sépia à l'image
+}
+}
+
+// Classe décoratrice "Flou"
+public class Flou extends Photo {
+public Flou(Photo photo) {
+description = "Flou";
+}
+
+public void modify() {
+// Appliquer le flou à l'image
+}
+}
+
+// Classe décoratrice "CouleurInversee"
+public class CouleurInversee extends Photo {
+public CouleurInversee(Photo photo) {
+description = "Couleur inversée";
+}
+
+public void modify() {
+// Appliquer la couleur inversée à l'image
+}
+}
+
+// Utilisation du design pattern Decorator
+Photo photo = new FiltreSepia(new Flou(new CouleurInversee(new Photo())));
+System.out.println(photo.getDescription()); // Affiche "Couleur inversée, Flou, Filtre sépia"
+photo.modify(); // Applique tous les effets à l'image
+\end{lstlisting}
+\end{minipage}
+
+\end{minipage}
+\\
+\cmidrule(lr){1-2}
+\textbf{Structure} & 
+\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+\newpage
+\section{Java}\label{sec:java}
+\subsection{Variables}
+\subsection{Méthodes}
+\subsection{Classes}
