@@ -1,0 +1,155 @@
+\subsection{Decorator}
+\begin{table}[H]
+\caption{Design pattern Decorator}
+\label{tbl:design_pattern_decorator}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{\textwidth}}
+\toprule
+\textbf{But} & Ajouter dynamiquement de nouvelles fonctionnalités à un objet sans altérer sa structure.\\
+\cmidrule(lr){1-2}
+\textbf{Quand} & Lorsque vous voulez ajouter de nouvelles fonctionnalités à un objet de manière flexible, sans avoir à utiliser une héritage complexe ou à créer de nouvelles classes pour chaque combinaison de fonctionnalités.\\
+\cmidrule(lr){1-2}
+\textbf{Comment} & Le design pattern Decorator définit une interface commune pour les objets à décorer et une classe de base pour les décorateurs qui enveloppent ces objets. Les décorateurs ajoutent des fonctionnalités supplémentaires en étendant la classe de base des décorateurs et en implémentant l'interface commune. Les objets peuvent alors être décorés en ajoutant successivement des décorateurs qui ajoutent les fonctionnalités souhaitées.\\
+\cmidrule(lr){1-2}
+\textbf{Avantages} & Permet d'ajouter de nouvelles fonctionnalités à un objet de manière flexible et sans altérer sa structure. Facilite la modification du comportement d'un objet à runtime.\\
+\cmidrule(lr){1-2}
+\textbf{Inconvénients} & Peut rendre le code plus complexe et difficile à comprendre, en particulier si de nombreux décorateurs sont utilisés.\\
+\cmidrule(lr){1-2}
+\textbf{Exemples} & 
+\hspace{4mm}
+\begin{minipage}[tl]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Un système de commande de restaurant en ligne qui permet aux clients de personnaliser leurs commandes en ajoutant des ingrédients supplémentaires. Le design pattern Decorator peut être utilisé pour ajouter des fonctionnalités à l'objet "commande" de manière dynamique, en créant des classes décoratrices pour chaque ingrédient supplémentaire (par exemple, "oeuf", "bacon", "oignon"). Ces classes décoratrices hériteront de la classe de base "commande" et ajouteront leur propre comportement (par exemple, augmenter le prix de la commande) lorsque la commande est créée.
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+// Classe de base "Commande"
+public abstract class Commande {
+protected double prix;
+
+public abstract double getPrix();
+}
+
+// Classe decoratrice "Ingredient"
+public abstract class Ingredient extends Commande {
+protected Commande commande;
+
+public Ingredient(Commande commande) {
+this.commande = commande;
+}
+}
+
+// Classe decoratrice concr\`ete "Oeuf"
+public class Oeuf extends Ingredient {
+public Oeuf(Commande commande) {
+super(commande);
+}
+
+@Override
+public double getPrix() {
+return commande.getPrix() + 1.50;
+}
+}
+
+// Classe decoratrice concrete "Bacon"
+public class Bacon extends Ingredient {
+public Bacon(Commande commande) {
+super(commande);
+}
+
+@Override
+public double getPrix() {
+return commande.getPrix() + 2.00;
+}
+}
+
+// Classe decoratrice concrete "Oignon"
+public class Oignon extends Ingredient {
+public Oignon(Commande commande) {
+super(commande);
+}
+
+@Override
+public double getPrix() {
+return commande.getPrix() + 0.75;
+}
+}
+
+// Exemple d'utilisation
+Commande commandeDeBase = new Commande();
+Commande commandePersonnalisee = new Oeuf(new Bacon(new Oignon(commandeDeBase)));
+System.out.println("Prix de la commande : " \+ commandePersonnalis\'ee.getPrix() \+ " \euro ");
+\end{lstlisting}
+\end{minipage}
+
+\end{minipage}
+%
+%
+%
+\hspace{6mm}
+\begin{minipage}[tr]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Un logiciel de retouche photo qui permet aux utilisateurs de ajouter des filtres et des effets \`a leurs photos. Le design pattern Decorator peut \^etre utilis\'e pour ajouter des fonctionnalit\'es à l'objet "photo" de mani\`ere dynamique, en cr\'eant des classes d\'ecoratrices pour chaque effet (par exemple, "filtre s\'epia", "flou", "couleur invers\'ee"). Ces classes d\'ecoratrices h\'eriteront de la classe de base "photo" et ajouteront leur propre comportement (par exemple, appliquer le filtre ou l'effet à l'image) lorsque la photo est modifi\'ee.
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+// Classe de base "Photo"
+public abstract class Photo {
+protected String description;
+
+public String getDescription() {
+return description;
+}
+
+public abstract void modify();
+}
+
+// Classe decoratrice "FiltreSepia"
+public class FiltreSepia extends Photo {
+public FiltreSepia(Photo photo) {
+description = "Filtre s\'epia";
+}
+
+public void modify() {
+// Appliquer le filtre s\'epia a l'image
+}
+}
+
+// Classe decoratrice "Flou"
+public class Flou extends Photo {
+public Flou(Photo photo) {
+description = "Flou";
+}
+
+public void modify() {
+// Appliquer le flou \`a l'image
+}
+}
+
+// Classe decoratrice "CouleurInversee"
+public class CouleurInversee extends Photo {
+public CouleurInversee(Photo photo) {
+description = "Couleur invers\'ee";
+}
+
+public void modify() {
+// Appliquer la couleur inversee \`a l'image
+}
+}
+
+// Utilisation du design pattern Decorator
+Photo photo = new FiltreSepia(new Flou(new CouleurInversee(new Photo())));
+System.out.println(photo.getDescription()); // Affiche "Couleur invers\'ee, Flou, Filtre s\'epia"
+photo.modify(); // Applique tous les effets \`a l'image
+\end{lstlisting}
+\end{minipage}
+
+\end{minipage}
+\\
+%\cmidrule(lr){1-2}
+%\textbf{Structure} & 
+%\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

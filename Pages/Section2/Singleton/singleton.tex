@@ -1,0 +1,107 @@
+\subsection{Singleton}
+\begin{table}[H]
+\caption{Design pattern Singleton}
+\label{tbl:design_pattern_singleton}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{\textwidth}}
+\toprule
+\textbf{But} & Garantir qu'une classe ne peut être instanciée qu'une seule fois, en maintenant un point d'accès global à cette instance.\\
+\cmidrule(lr){1-2}
+\textbf{Quand} & Lorsque vous voulez que votre application n'ait qu'une seule instance d'une classe particulière, par exemple pour gérer l'accès à une base de données ou à une ressource partagée.\\
+\cmidrule(lr){1-2}
+\textbf{Comment} & Le design pattern Singleton définit une méthode d'accès global à une instance unique de la classe. Cette instance est créée au moment de la première utilisation de la méthode d'accès. Les autres appels à cette méthode retourneront simplement la référence à l'instance existante.\\
+\cmidrule(lr){1-2}
+\textbf{Avantages} & Permet de garantir qu'il n'existe qu'une seule instance d'une classe donnée dans l'application. Facilite le partage de ressources et la gestion de l'accès à celles-ci.\\
+\cmidrule(lr){1-2}
+\textbf{Inconvénients} & Peut rendre le code difficile à tester, car il n'est pas possible de créer plusieurs instances de la classe pour les tests. Peut également rendre le code plus difficile à maintenir si utilisé de manière excessive.\\
+\cmidrule(lr){1-2}
+\textbf{Exemples} &
+\hspace{4mm}
+\begin{minipage}[tl]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Gestionnaire de connexion à une base de données : vous souhaitez que votre application n'ait qu'une seule connexion à la base de données afin d'éviter les conflits et d'optimiser les performances. Vous pouvez utiliser le design pattern singleton pour créer un objet unique qui gère la connexion à la base de données et qui est accessible depuis n'importe quelle partie de votre application.
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+public class GestionnaireConnexionBDD {
+  private static GestionnaireConnexionBDD instance = null;
+  private Connection connexion = null;
+
+  private GestionnaireConnexionBDD() {
+    // Initialisation de la connexion \`a la base de donn\'ees
+  }
+
+  public static GestionnaireConnexionBDD getInstance() {
+    if (instance == null) {
+      instance = new GestionnaireConnexionBDD();
+    }
+    return instance;
+  }
+
+  public Connection getConnexion() {
+    return connexion;
+  }
+}
+
+
+GestionnaireConnexionBDD gestionnaire = GestionnaireConnexionBDD.getInstance();
+Connection connexion = gestionnaire.getConnexion();
+
+\end{lstlisting} 
+\end{minipage}
+\end{minipage}
+%\\
+%\cmidrule(lr){2-2}
+%& 
+\hspace{6mm}
+\begin{minipage}[tr]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Gestionnaire de fichiers de configuration : vous avez un fichier de configuration qui est utilisé par plusieurs parties de votre application et vous souhaitez qu'il soit accessible de manière simple et rapide. Vous pouvez utiliser le design pattern singleton pour créer un objet unique qui gère l'accès au fichier de configuration et qui est accessible depuis n'importe quelle partie de votre application.
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+import java.util.Properties;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class ConfigurationManager {
+  private static ConfigurationManager instance;
+  private Properties config;
+
+  private ConfigurationManager() {
+    config = new Properties();
+    try {
+      config.load(new FileInputStream("config.properties"));
+    } catch (IOException e) {
+      // G\'erer l'exception
+    }
+  }
+
+  public static ConfigurationManager getInstance() {
+    if (instance == null) {
+      instance = new ConfigurationManager();
+    }
+    return instance;
+  }
+
+  public String getProperty(String key) {
+    return config.getProperty(key);
+  }
+}
+
+String property = ConfigurationManager.getInstance().getProperty("key");
+
+
+\end{lstlisting}
+\end{minipage}
+\end{minipage}
+\\
+%\cmidrule(lr){1-2}
+%\textbf{Structure} & 
+
+%\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+

@@ -1,0 +1,188 @@
+\subsection{Observer}\label{subsec:observer}
+\begin{table}[H]
+\caption{Design pattern Observer}
+\label{tbl:design_patterns_observer}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{\textwidth}}
+\toprule
+\textbf{But} & Permettre à un objet de suivre l'état d'un autre objet et de recevoir une notification en cas de changement d'état.\\
+\cmidrule(lr){1-2}
+\textbf{Quand} & Lorsque vous voulez que plusieurs objets restent synchronisés et reçoivent une notification en cas de changement d'état de l'un d'entre eux.\\
+\cmidrule(lr){1-2}
+\textbf{Comment} & Le design pattern Observer définit une relation de type "un-vers-plusieurs" entre un objet observé (Observable) et plusieurs objets observateurs (Observer). L'Observable envoie une notification aux Observer en cas de changement d'état. Les Observer peuvent alors mettre à jour leur état en fonction de celui de l'Observable.\\
+\cmidrule(lr){1-2}
+\textbf{Avantages} & Permet de maintenir la synchronisation entre plusieurs objets sans avoir à connaître leurs implémentations. Facilite l'ajout ou la suppression d'Observer sans avoir à modifier l'Observable.\\
+\cmidrule(lr){1-2}
+\textbf{Inconvénients} & Nécessite la création de liens de dépendance entre les objets observés et les objets observateurs. Peut rendre le code plus complexe si utilisé de manière excessive.\\
+\cmidrule(lr){1-2}
+\textbf{Exemples} & 
+\hspace{4mm}
+\begin{minipage}[tl]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Mise à jour en temps réel d'un tableau de bord d'un système de gestion de projets. Lorsque des données sont mises à jour dans le système, un observateur est déclenché et met à jour le tableau de bord en conséquence.   
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+import java.util.ArrayList;
+import java.util.List;
+
+// Classe Observateur
+interface Observateur {
+  public void update(int nouvelleDonnee);
+}
+
+// Classe Sujet
+class Sujet {
+  private List<Observateur> observateurs = new ArrayList<Observateur>();
+  private int donnee;
+
+  public void ajouterObservateur(Observateur observateur) {
+    observateurs.add(observateur);
+  }
+
+  public void supprimerObservateur(Observateur observateur) {
+    observateurs.remove(observateur);
+  }
+
+  public void notifierObservateurs() {
+    for (Observateur observateur : observateurs) {
+      observateur.update(donnee);
+    }
+  }
+
+  public void mettreAJourDonnee(int nouvelleDonnee) {
+    donnee = nouvelleDonnee;
+    notifierObservateurs();
+  }
+}
+
+// Classe Observateur concr\`ete
+class TableauDeBord implements Observateur {
+  private Sujet sujet;
+
+  public TableauDeBord(Sujet sujet) {
+    this.sujet = sujet;
+    sujet.ajouterObservateur(this);
+  }
+
+  @Override
+  public void update(int nouvelleDonnee) {
+    // Mise \`a jour du tableau de bord avec la nouvelle donn\'ee
+  }
+}
+
+// Classe de test
+class Test {
+  public static void main(String[] args) {
+    Sujet sujet = new Sujet();
+    TableauDeBord tableauDeBord = new TableauDeBord(sujet);
+
+    sujet.mettreAJourDonnee(10); // Le tableau de bord sera mis \`a jour avec la nouvelle donn\'ee
+  }
+}
+
+\end{lstlisting} 
+\end{minipage}
+\end{minipage}
+%\\
+%\cmidrule(lr){2-2}
+%& 
+\hspace{6mm}
+\begin{minipage}[tr]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Notification d'un utilisateur lorsqu'un nouveau message est re\{ç\}u dans une application de messagerie. L'application est configur\'ee pour observer les nouveaux messages et en informer l'utilisateur en envoyant une notification push.  
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+import java.util.ArrayList;
+import java.util.List;
+
+// Classe repr\'esentant un utilisateur de l'application de messagerie
+class User {
+  private String name;
+  private List<Message> messages;
+
+  public User(String name) {
+    this.name = name;
+    this.messages = new ArrayList<>();
+  }
+
+  // M\'ethode appel\'ee lorsqu'un nouveau message est re\c cu
+  public void receiveMessage(Message message) {
+    messages.add(message);
+    // Envoi de la notification push \`a l\'utilisateur
+    sendPushNotification();
+  }
+
+  // M\'ethode permettant d'envoyer une notification push \`a l'utilisateur
+  public void sendPushNotification() {
+    System.out.println(\"Notification envoy\'ee \`a l\'utilisateur \" \+ name \+ \" : nouveau message re\c cu !\");
+  }
+}
+
+// Classe repr\'esentant un message dans l'application de messagerie
+class Message {
+  private String content;
+
+  public Message(String content) {
+    this.content = content;
+  }
+
+  public String getContent() {
+    return content;
+  }
+}
+
+// Classe repr\'esentant l\'application de messagerie
+class MessagingApp {
+  private List<User> users;
+  private List<Message> messages;
+
+  public MessagingApp() {
+    this.users = new ArrayList<>();
+    this.messages = new ArrayList<>();
+  }
+
+  // M\'ethode permettant d\'ajouter un utilisateur \`a l\'application
+  public void addUser(User user) {
+    users.add(user);
+  }
+
+  // M\'ethode permettant d\'envoyer un message \`a tous les utilisateurs de l\'application
+  public void sendMessage(Message message) {
+    messages.add(message);
+    // Notification de tous les utilisateurs de l'application
+    for (User user : users) {
+      user.receiveMessage(message);
+    }
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    // Cr\'eation de l'application de messagerie
+    MessagingApp messagingApp = new MessagingApp();
+
+    // Cr\'eation de deux utilisateurs
+    User user1 = new User("Alice");
+    User user2 = new User("Bob");
+
+    // Ajout des utilisateurs \`a l\'application de messagerie
+    messagingApp.addUser(user1);
+    messagingApp.addUser(user2);
+
+    // Envoi d\'un message \`a tous les utilisateurs de l\'application
+    messagingApp.sendMessage(new Message("Bonjour, comment vas-tu ?"));
+  }
+}
+
+\end{lstlisting}
+\end{minipage}
+\end{minipage}
+\\
+%\cmidrule(lr){1-2}
+%\textbf{Structure} & \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

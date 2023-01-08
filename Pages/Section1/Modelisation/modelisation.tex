@@ -1,0 +1,103 @@
+\section{Modélisation}\label{sec:diagramme_modelisation}
+\begin{definition}[Modèle]
+    Un modèle est une représentation simplifiée d’une partie de la réalité dans un but spécifique.
+\end{definition}
+Un modèle est toujours une abstraction: pour réduire la complexité, on ne tient pas compte de certaines caractéristiques ou propriétés de l’objet complexe qu’on modélise, afin de se concentrer sur d’autres.
+
+\begin{itemize}
+    \item Exactitude: dévelopez des modèles syntaxiquement corrects
+    \item Précision: évitez l’ambiguité dans les modèles 
+    \item Concision: évitez les détails inutiles
+    \item Complétude: modélisez tous les aspects essentiels 
+    \item Cohérence: évitez les incohérences dans les modèles
+    \item Compréhensibilité: créez des modèles lisibles et compréhensibles
+    \item Uniformité: utilisez un style uniforme partout
+\end{itemize}
+
+
+\begin{definition}[UML — Unified Modeling Language]
+    UML (Unified Modeling Language) est un ensemble de notations pour décrire un système logiciel de manière visuelle en termes de modèles (Langage de modélisation).
+\end{definition}
+
+
+\begin{table}[H]
+	\centering
+		\caption{Langage UML}
+		\label{tbl:modélisation}
+		\begin{adjustbox}{max width=\textwidth}
+		\begin{tabular}{l|l|l}
+			\toprule
+			\multirow{6}{*}{Points Forts}&\multirow{3}{*}{Langage \og semi-formel\fg et standardisé}		&  Gain de précision\\
+			\cmidrule(lr){3-3}
+            & & Gage de stabilité\\
+            \cmidrule(lr){3-3}
+            & & Encourage l’automatisation via l’utilisation d’outils dédiés\\
+            \cmidrule(lr){2-2}\cmidrule(lr){3-3}
+            &\multirow{3}{*}{Support de communication efficace}
+			&  Cadre l'analyse des besoins\\
+			\cmidrule(lr){3-3}
+            & & Facilite la compréhension de systèmes abstrait et complexes\\
+            \cmidrule(lr){3-3}
+            & & Langage universel car polyvalent et souple\\
+			%\midrule
+            \cmidrule{1-2} \cmidrule(lr){3-3}
+			\multirow{4}{*}{Points Faibles}& \multirow{2}{*}{Nécessité d'apprentissage et de période d’adaptation} 
+			& UML contient beaucoup (trop?) de diagrammes ...  \\
+			\cmidrule(lr){3-3}
+			&& On peut commencer avec un sous-ensemble \\
+			\cmidrule(lr){2-2}\cmidrule(lr){3-3}
+			&\multirow{2}{*}{Absence du processus, clé de la réussite d’un projet}
+			& Intégration d'UML dans un processus $\implies Difficile$\\
+			\cmidrule(lr){3-3}
+			&& Améliorer un processus est une tâche longue et complexe\\
+			\bottomrule
+		\end{tabular}
+		\end{adjustbox}
+\end{table}
+
+\begin{table}[H]
+\centering
+%\begin{center}
+\caption{Catégories et sous-catégories de diagrammes UML}
+\label{tbl:uml}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{7em}|p{6em}|p{10em}|p{40em}}
+\toprule
+\multicolumn{2}{c}{Modélisation} & Type de diagramme & Description \\
+\midrule
+\multirow{6}{7em}{Structure Statique} 
+& \multirow{4}{*}{Objet}& \nameref{sec:diagramme_classe} 
+& Décrit les classes, leurs interrelations, et leurs instances. \\
+\cmidrule(lr){3-4}
+&& Diagramme d'objets & Décrit les objets et leurs relations avec les classes. \\
+\cmidrule(lr){3-4}
+&& Diagramme de paquetages & Montre la répartition des éléments dans des groupes logiques. \\
+\cmidrule(lr){3-4}
+&& Diagramme de structure composite & Représente la structure interne de composants de logiciel. \\
+\cmidrule(lr){2-4}
+&\multirow{2}{*}{Architecture} & Diagramme de composants (logiciel) & Montre comment les différents composants du logiciel sont organisés logiquement. \\
+\cmidrule(lr){3-4}
+&& Diagramme de déploiement (matériel) & Montre comment les différents composants du matériel (hardware) sont organisés physiquement. \\
+\cmidrule(lr){1-4}
+\multirow{7}{7em}{Comportement Dynamique} 
+& \multirow{1}{*}{Utilisation} & \nameref{sec:diagramme_casutilisation} 
+& Montre comment un système interagit avec ses utilisateurs.\\
+\cmidrule(lr){2-4}
+&\multirow{2}{6em}{Activités et États} 
+& \nameref{sec:diagramme_etatscomportementaux} & Montre comment le système se comporte de façon interne, modélise le comportement discret piloté par les évènements.\\
+\cmidrule(lr){3-4}
+&& \nameref{sec:diagramme_activite} & Modélise le comportement d’un système ou processus basé sur les flux de contrôle.\\
+\cmidrule(lr){2-4}
+&\multirow{4}{*}{Interaction} 
+& \nameref{sec:diagramme_sequence} & Montre le comportement du système par l’interaction des objets qui le compose.\\
+\cmidrule(lr){3-4}
+&& Diagramme de communication & Montre comment les objets communiquent entre eux.\\
+\cmidrule(lr){3-4}
+&& \nameref{sec:diagramme_interaction} & Montre comment les processus et interactions sont organisés dans le système.\\
+\cmidrule(lr){3-4}
+&& Timing diagram & Montre comment les interactions et les changements d'états sont liés dans le temps.\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+%\end{center}
+\end{table}

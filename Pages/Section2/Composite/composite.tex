@@ -1,0 +1,188 @@
+\subsection{Composite}\label{subsec:composite}
+\begin{definition}[Design Pattern Composite]
+\end{definition}
+\begin{table}[H]
+\caption{Design pattern Composite}
+\label{tbl:design_patterns_composite}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{\textwidth}}
+\toprule
+\textbf{But} & Permettre la manipulation d'une hiérarchie de objets de manière uniforme, que ces objets soient des composants simples ou des groupes de composants.\\
+\cmidrule(lr){1-2}
+\textbf{Quand} & Lorsque vous avez une hiérarchie d'objets et que vous voulez traiter chaque objet de manière uniforme, qu'il s'agisse d'un composant simple ou d'un groupe de composants.\\
+\cmidrule(lr){1-2}
+\textbf{Comment} & Le design pattern Composite définit une interface pour les composants de la hiérarchie, qui peut être implémentée par des classes de composants simples ou de groupes de composants. Cela permet de traiter chaque objet de la hiérarchie de manière uniforme, indépendamment de son type.\\
+\cmidrule(lr){1-2}
+\textbf{Avantages} & Permet de traiter les composants simples et les groupes de composants de manière uniforme. Rend le code plus lisible et facilite l'ajout de nouvelles fonctionnalités.\\
+\cmidrule(lr){1-2}
+\textbf{Inconvénients} & Nécessite la création d'une interface pour les composants de la hiérarchie. Peut rendre le code plus complexe et difficile à comprendre si utilisé de manière excessive.\\
+\cmidrule(lr){1-2}
+\multirow{2}{*}{\textbf{Exemples}} & 
+\hspace{4mm}
+\begin{minipage}[tl]{0.5\textwidth}
+\begin{minipage}[t]{1\textwidth}
+Modélisation d'une structure hiérarchique :
+Le design pattern Composite peut être utilisé pour modéliser une structure hiérarchique de données, comme par exemple l'arborescence d'un système de fichiers. Dans ce cas, chaque dossier peut être considéré comme un "composite", qui peut contenir à la fois des fichiers et d'autres dossiers (qui sont eux aussi des composites). Le composite "racine" de l'arborescence est la racine du système de fichiers. 
+\end{minipage}
+\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+public abstract class FileSystemNode {
+  protected String name;
+
+  public FileSystemNode(String name) {
+    this.name = name;
+  }
+
+  public abstract int getSize();
+}
+
+public class File extends FileSystemNode {
+  private int size;
+
+  public File(String name, int size) {
+    super(name);
+    this.size = size;
+  }
+
+  @Override
+  public int getSize() {
+    return size;
+  }
+}
+
+public class Directory extends FileSystemNode {
+  private List<FileSystemNode> children;
+
+  public Directory(String name) {
+    super(name);
+    children = new ArrayList<>();
+  }
+
+  public void addNode(FileSystemNode node) {
+    children.add(node);
+  }
+
+  @Override
+  public int getSize() {
+    int size = 0;
+    for (FileSystemNode child : children) {
+      size += child.getSize();
+    }
+    return size;
+  }
+}
+
+// Exemple d'utilisation :
+Directory root = new Directory("root");
+Directory home = new Directory("home");
+Directory user = new Directory("user");
+
+File file1 = new File("file1.txt", 100);
+File file2 = new File("file2.txt", 200);
+File file3 = new File("file3.txt", 300);
+
+user.addNode(file1);
+user.addNode(file2);
+home.addNode(user);
+home.addNode(file3);
+root.addNode(home);
+
+System.out.println("Taille totale du r\'epertoire racine : " + root.getSize() + " octets");
+\end{lstlisting}
+\end{minipage}
+\end{minipage}
+%\\
+%\cmidrule(lr){2-2}
+%& 
+\hspace{6mm}
+\begin{minipage}[tr]{0.5\textwidth}
+%\begin{minipage}[t]{1\textwidth}
+Arbre de décision en intelligence artificielle :
+Le design pattern Composite peut être utilisé pour modéliser un arbre de décision en intelligence artificielle. Dans ce cas, chaque nœud de l'arbre peut être considéré comme un "composite", qui peut contenir à la fois des feuilles (qui sont des éléments "feuilles" de l'arbre) et d'autres nœuds (qui sont eux aussi des composites). Le composite "racine" de l'arbre est le nœud racine de l'arbre de décision.
+%\end{minipage}
+%\begin{minipage}[b]{1\textwidth}
+\begin{lstlisting}[style=monstyle]
+// Classe abstraite pour repr\'esenter un n\oeud de l\'arbre de d\'ecision
+public abstract class DecisionTreeNode {
+  // M\'ethode abstraite pour \'evaluer le n\oeud de l\'arbre de d\'ecision
+  public abstract boolean evaluate();
+}
+
+// Classe concr\`ete pour repr\'esenter un n\oeud "composite" de l\'arbre de d\'ecision
+public class CompositeDecisionTreeNode extends DecisionTreeNode {
+  private List<DecisionTreeNode> children; // Liste des enfants du n\oeud
+
+  // Constructeur pour initialiser la liste des enfants
+  public CompositeDecisionTreeNode(List<DecisionTreeNode> children) {
+    this.children = children;
+  }
+
+  // M\'ethode d'\'evaluation de l'arbre de d\'ecision qui parcourt tous les enfants et renvoie true si tous les enfants renvoient true
+  @Override
+  public boolean evaluate() {
+    for (DecisionTreeNode child : children) {
+      if (!child.evaluate()) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+
+// Classe concr\`ete pour repr\'esenter une feuille de l'arbre de d\'ecision
+public class LeafDecisionTreeNode extends DecisionTreeNode {
+  private boolean value; // Valeur de la feuille
+
+  // Constructeur pour initialiser la valeur de la feuille
+  public LeafDecisionTreeNode(boolean value) {
+    this.value = value;
+  }
+
+  // M\'ethode d'\'evaluation de l'arbre de d\'ecision qui renvoie la valeur de la feuille
+  @Override
+  public boolean evaluate() {
+    return value;
+  }
+}
+
+// Exemple d'utilisation de l'arbre de d\'ecision
+DecisionTreeNode root = new CompositeDecisionTreeNode(Arrays.asList(
+  new LeafDecisionTreeNode(true),
+  new LeafDecisionTreeNode(true),
+  new LeafDecisionTreeNode(false)
+));
+
+boolean result = root.evaluate(); // false
+\end{lstlisting}
+%\end{minipage}
+\end{minipage}
+%\end{minipage}
+\\
+%\cmidrule(lr){1-2}
+%\textbf{Structure} &
+%%\begin{tikzpicture}[node distance = 6cm]
+%%\node(Composite) [classe]{
+%% \textbf{Composite}\\
+%% };
+%%\node(Leaf) [classe, right of=Composite] {
+%%\textbf{Leaf}\\
+%%};
+%%\node(SubComposite) [classe, below of=Leaf, yshift=4cm] {
+%%\textbf{Composite}\\
+%%};
+%%\node(SubLeaf) [classe, right of=Leaf] {
+%%\textbf{Leaf}\\
+%%};
+%%\node(SubSubComposite) [classe, below of=SubLeaf, yshift=4cm] {
+%%\textbf{Composite}\\
+%%};
+%%\draw[generalization] (Leaf.west) -- (Composite.east);
+%%\draw[generalization] (SubComposite.west) -- (Composite.east);
+%%\draw[generalization] (SubLeaf.west) -- (SubComposite.east);
+%%\draw[generalization] (SubSubComposite.west) -- (SubComposite.east);
+%%\end{tikzpicture} 
+%\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

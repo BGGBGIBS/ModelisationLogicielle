@@ -1,0 +1,53 @@
+\section{Design Patterns}\label{sec:designpatterns}
+\begin{minipage}[t]{1\textwidth}
+\begin{definition}[Design Pattern]
+Un design pattern (modèle de conception) est une solution générale à un problème de conception courant dans un contexte donné. En d'autres termes, c'est un schéma de pensée qui peut être utilisé pour résoudre un problème de conception de manière efficace et réutilisable. Les design patterns sont souvent utilisés dans la programmation orientée objet pour améliorer la flexibilité, la maintenabilité et la réutilisabilité du code.
+\end{definition}
+\begin{table}[H]
+\caption{Principaux design patterns par catégorie}
+\label{tbl:design_patterns}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|p{7em}|p{38em}}
+\toprule
+\textbf{Catégorie} & \textbf{Design patterns} & \textbf{Description} \\
+\midrule
+\multirow{4}{*}{Création} 
+& Fabrique abstraite & Permet de déléguer la création d'objets à des sous-classes.\\
+\cmidrule(lr){2-3}
+& Prototype & Permet de créer de nouveaux objets en copiant des objets existants.\\
+\cmidrule(lr){2-3}
+& Singleton & Assure qu'une classe ne possède qu'une seule instance et fournit un accès global à celle-ci.\\
+\cmidrule(lr){2-3}
+& Builder & Permet de produire différentes variations ou représentations d’un objet en utilisant le même code de construction.\\
+\cmidrule(lr){2-3}
+& Fabrique & Définit une interface pour créer des objets dans une classe mère, mais délègue le choix des types d’objets à créer aux sous-classes.\\
+\midrule
+\multirow{6}{*}{Structure} 
+& Composite & Compose des objets en structures arborescentes pour représenter l'héritage partiel et laisse le client traiter de manière uniforme des objets simples et composites.\\
+\cmidrule(lr){2-3}
+& Decorator & Ajoute de nouvelles responsabilités à un objet de manière transparente.\\
+\cmidrule(lr){2-3}
+& Adaptateur & adapte l'interface d'une classe à une autre interface attendue par les clients.\\
+\cmidrule(lr){2-3}
+& Bridge & Sépare l'implémentation d'une classe de son interface, de sorte que les deux puissent être modifiées indépendamment.\\
+\cmidrule(lr){2-3}
+& Façade & Fournit une interface unique pour une sous-système complexe afin de le rendre plus facile à utiliser.\\
+\cmidrule(lr){2-3}
+& Flyweight & Minimiser l'utilisation de mémoire en partageant des objets similaires au lieu de les créer indépendamment.\\
+\midrule
+\multirow{5}{*}{Comportement} 
+& Visiteur & Représente une opération à effectuer sur les éléments d'une structure de données hiérarchique.\\
+\cmidrule(lr){2-3}
+& Observer & Définit une relation un-à-plusieurs entre des objets de sorte que lorsqu'un objet change d'état, tous ses dépendants en sont notifiés et mis à jour automatiquement.\\
+\cmidrule(lr){2-3}
+& Commande & Encapsule la logique de traitement d'une requête dans un objet, de sorte qu'une requête peut être passée à différents objets de manière interchangeable.\\
+\cmidrule(lr){2-3}
+& Responsabilité & Permet à un objet de passer une requête le long d'une chaîne de traitement jusqu'à ce qu'un objet la traite.\\
+\cmidrule(lr){2-3}
+& Template & Définit un schéma de traitement pour une opération en déléguant certaines étapes à des sous-classes.\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\end{minipage}
+

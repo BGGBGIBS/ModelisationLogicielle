@@ -80,8 +80,5 @@
     <requires type="dynamic">
       <file>umonsmodlog.bcf</file>
     </requires>
-    <requires type="editable">
-      <file>refs.bib</file>
-    </requires>
   </external>
 </requests>

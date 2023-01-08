@@ -1,0 +1,141 @@
+\section{Diagramme de Classe}\label{sec:diagramme_classe}
+
+\begin{definition}[Diagramme de Classe]
+Un diagramme de classe (Class Diagram) est un type de diagramme UML qui représente la structure statique d'un système au travers de ses classes et interfaces, leurs attributs, leurs méthodes et leurs interactions.\\
+Un diagramme de classe peut également illustrer les relations entre les classes, comme l'héritage, l'association, la composition ou l'agrégation.
+\end{definition}
+
+
+\begin{table}[h]
+\caption{Composants d'un diagramme de classe UML 2.5}
+\label{tbl:diagram_class_components}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|l|l}
+\toprule
+\textbf{Composant} & \textbf{Description} & \textbf{Représentation} \\
+\midrule
+Classe & Représente les ttypes dedonnées disponibles. & Un rectangle comprenant le nom de classe, les attributs et les opérations. \\
+%\cmidrule{1-2}
+Attributs & Des données primitives qui se trouvent dans les classes et leurs
+instances (objets) &  \\
+%\cmidrule{1-2}
+Opérations & Représentent les fonctions exécutées par les classes et leurs instances (objets) &  \\
+%\cmidrule{1-2}
+Associations (agrégations et compositions) & Représentent les liens entre les instances (objets) des classes & \\
+%\cmidrule{1-2}
+Généralisations & Groupent les classes en arbre d’héritage & \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+
+
+
+\begin{table}[h]
+\caption{Composants d'une classe en UML 2.5}
+\label{tbl:diagram_class_classecomponents}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{l|l}
+\toprule
+\textbf{Composant} & \textbf{Description} \\
+\midrule
+Nom de la classe & Le nom de la classe, qui doit être unique et décrire de manière concise la fonction de la classe. \\
+%\cmidrule{1-2}
+Visibilité & La visibilité de la classe, qui peut être publique, protégée ou privée. \\
+%\cmidrule{1-2}
+Modificateurs & Les modificateurs de la classe, tels que « abstract » ou « final ». \\
+%\cmidrule{1-2}
+Attributs & Les attributs de la classe, qui sont des variables membres qui décrivent les caractéristiques de la classe. \\
+%\cmidrule{1-2}
+Opérations & Les opérations de la classe, qui sont des méthodes membres qui décrivent les actions que la classe peut effectuer. \\
+%\cmidrule{1-2}
+Associations & Les associations de la classe, qui décrivent les relations entre la classe et d'autres classes ou objets. \\
+%\cmidrule{1-2}
+Dépendances & Les dépendances de la classe, qui décrivent les relations de dépendance entre la classe et d'autres classes ou objets. \\
+%\cmidrule{1-2}
+Notes & Les notes de la classe, qui sont des informations supplémentaires sur la classe. \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+\begin{table}[H]
+\caption{Types d'attributs et de leur syntaxe en UML 2.5 :}
+\label{tbl:diagram_class_classeattributs}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{3cm}|p{2cm}|p{2cm}|l}
+\toprule
+\textbf{Type d'attribut} & \textbf{Symbole} & \textbf{Syntaxe} & \textbf{Description} \\
+\midrule
+Attribut public & $+$ & $+nom: type$ & L'attribut est accessible à l'extérieur de la classe. \\
+%\cmidrule(lr){1-4}
+Attribut protégé & $\#$ & $\#nom: type$ & L'attribut est accessible seulement par les classes héritant de la classe contenant l'attribut. \\
+%\cmidrule(lr){1-4}
+Attribut privé & $-$ & $-nom: type$ & L'attribut est accessible seulement à l'intérieur de la classe. \\
+%\cmidrule(lr){1-4}
+Attribut de package & \textasciitilde & \textasciitilde $nom: type$ & L'attribut est accessible par toutes les classes dans le même package. \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Types d'opérations et leur syntaxe.}
+	\begin{adjustbox}{max width = \textwidth}
+\begin{tabular}{p{3cm}p{5cm}p{3cm}}
+\toprule
+Nom & Type de retour & Arguments \\
+\midrule
+returnPos & returnPos() : Position & \\
+scaleFigure & & scaleFigure(percent : int) \\
+\bottomrule
+\end{tabular}
+	\end{adjustbox}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\caption{Types de cardinalités et leur syntaxe.}
+	\begin{adjustbox}{max width = \textwidth}
+		\begin{tabular}{cccc}
+			\toprule
+			Cardinalité & Alternative & Signification \\
+			\midrule
+			1 & 1..1 & Un et un seul \\
+			0..1 & & Zéro ou un \\
+			m..n& & De m à n (entiers naturels) \\
+			* & 0..* & De zéro à plusieurs \\
+			1..*&  & D'un à plusieurs \\
+			\bottomrule
+		\end{tabular}
+	\end{adjustbox}
+\end{table}
+
+
+
+\begin{table}[H]
+\caption{Types de classes et de leur syntaxe en UML 2.5 :}
+\label{tbl:diagram_class_classetypes}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{4cm}|p{4cm}|p{8cm}}
+\toprule
+\textbf{Type de classe} & \textbf{Syntaxe} & \textbf{Description} \\
+\midrule
+Classe normale & \texttt{class NomClasse} & Classe standard, représentée par une boîte pleine \\
+\midrule
+Classe abstraite & \texttt{abstract class NomClasse} & Classe qui ne peut pas être instanciée, représentée par une boîte vide.
+Peut contenir des méthodes concrètes et des méthodes abstraites.Peut contenir des attributs et des constantes. Peut être utilisée comme classe mère pour hériter de ses méthodes concrètes et de ses méthodes abstraites. \\
+\midrule
+Interface & \texttt{interface NomInterface} & Classe qui ne contient que des méthodes abstraites, représentée par une boîte avec des lignes brisées. Ne peut contenir que des méthodes abstraites. Ne peut contenir que des constantes.Ne peut pas être utilisée comme classe mère, mais peut être implémentée par une classe pour hériter de ses méthodes abstraites. \\
+\midrule
+Classe enveloppe & \texttt{«envelope» NomClasse} & Classe qui encapsule un objet existant, représentée par une boîte avec une bordure en pointillés \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
