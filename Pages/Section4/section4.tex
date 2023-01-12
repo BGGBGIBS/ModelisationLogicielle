@@ -1,7 +1,8 @@
 \chapter{Examens Corrig\'es}\label{chap:examens}
 
 \newpage
-\section{Examen 2022}
+\section{Mod\'elisation logicielle}
+\subsection{Examen janvier 2022}
 \subsection*{Question 1}
 \subsubsection*{A}
 L'acteur Client est une sp\'ecialisation de l'acteur g\'en\'eral Porteur de carte. Il a acc\`s \`a tous les UseCase auquel a acc\`es l'acteur g\'en\'eral, par contre l'acteur g\'en\'eral n'a pas acc\`es aux UseCase de l'acteur sp\'ecialis\'e.
@@ -39,10 +40,159 @@ Il s'agit de l'exemple 3 car le UseCase Maintenance inclus dans tous les cas les
 \end{figure}
 
 \newpage
-\section{Examen 2020}
-\subsection*{Question 1}
-\subsection*{Question 2}
-\subsection*{Question 3}
-\subsection*{Question 4}
-\subsection*{Question 5}
-\subsection*{Question 6}
+\section{D\'evelopement dirig\'e par les mod\`eles}
+\subsection{Examen 2022}
+\subsubsection{Question 1}
+\subsubsection{Question 2: State Design Patterns : \'etats composites}
+\begin{enumerate}
+	\item Veuillez expliquer en français ce qu'implique l'implémentation d'états composites via le state design pattern, en terme de hiérarchie de classes. Dites aussi combien de classes sont nécessaires dans un state design pattern (sans compter la classe client) afin d'implémenter une machine qui dispose de deux états composites chacun ayant deux états possibles.
+	\item Dites dans laquelle/lesquelles des classes dont vous parlez ci-dessus et sous quelle forme peuvent être mémorisés des états historiques. Dessinez un diagramme de classes UML simplifié, ne comportant que le nom des classes et les informations permettant de voir apparaitre les états composites et historiques.
+\end{enumerate}
+\subsubsection{Question 3}
+\subsubsection{Question 4: Test de logiciel}
+\begin{enumerate}
+	\item Une fonction statique de calcul de l'exponentielle de base 10 (exp10) est implémentée dans une Classe mathématique (Math). Elle renvoie une exception dans le cas où la valeur d'entée est telle que le résultat du calcul de l'exponentielle entraine une valeur numérique qui dépasse la valeur maximum d'un double. Le prototype de cette fonction est le suivant:
+	public static double exp10 (double val) throws
+	ArithmeticException.
+	Veuillez écrire le code en langage JAVA et la librairie JUnit, d'une classe de test permettant une bonne couverture des cas grâce à des classes d'équivalence en test boîte noire (décidez d'abord de combien de classes d'équivalence vous aurez besoin).
+	\begin{lstlisting}[style=monstyle]
+		import org.junit.Test;
+		import static org.junit.Assert.*;
+		
+		public class MathTest {
+			@Test
+			public void testExp10WithValidInput() {
+				assertEquals(100.0, Math.exp10(2), 0.0001);
+				assertEquals(1.0, Math.exp10(0), 0.0001);
+				assertEquals(1000.0, Math.exp10(3), 0.0001);
+			}
+			
+			@Test(expected = ArithmeticException.class)
+			public void testExp10WithInvalidInput() {
+				Math.exp10(Double.MAX_VALUE);
+			}
+		}
+		
+	\end{lstlisting}
+Dans cet exemple, la classe de test MathTest contient deux méthodes de test: testExp10WithValidInput() et testExp10WithInvalidInput(). La première méthode teste si la fonction renvoie les résultats attendus pour des entrées valides et la deuxième vérifie si la fonction lève bien l'exception ArithmeticException pour des entrées qui dépassent la valeur maximale d'un double. Cela couvre deux classes d'équivalence : les entrées valides et les entrées qui dépassent la valeur maximale d'un double.
+Il est possible d'ajouter plusieurs cas de test pour couvrir d'autres classes d'équivalence en fonction des besoins.
+
+	\item Sur base du 4.1, écrivez ensuite un test erroné qui provoquera un résultat de type ERROR. On suppose que la classe Math et l'implémentation de la fonction exp10 sont correctes. Il s'agit ici d'un bug dans le code de test.
+	\begin{lstlisting}[style=monstyle]
+		import org.junit.Test;
+		import static org.junit.Assert.*;
+		
+		public class MathTest {
+			@Test
+			public void testExp10WithValidInput() {
+				// bug: on utilise la m\'ethode assertEquals() qui teste si les valeurs sont \'egales,
+				// alors qu'on devrait utiliser la m\'ethode assertEquals() qui teste si les deux valeurs sont \'egales avec un certain delta.
+				assertEquals(100.0, Math.exp10(2));
+				assertEquals(1.0, Math.exp10(0));
+				assertEquals(1000.0, Math.exp10(3));
+			}
+		}
+		
+	\end{lstlisting}
+Dans cet exemple, la méthode testExp10WithValidInput() utilise la méthode assertEquals() qui teste si les deux valeurs sont égales. Cependant, la fonction exp10 peut renvoyer un résultat avec une certaine précision, il est donc nécessaire de vérifier si les deux valeurs sont égales avec un certain delta.
+Ainsi, le test échouera car il n'y a pas de tolérance pour l'erreur de calcul. Ce qui causera un résultat de type ERROR.
+	\item Ecrivez ensuite un test erroné qui provoquera un résultat de type FAILURE. On suppose que la classe Math et l'implémentation de la fonction exp10 sont correctes. Il s'agit ici d'un bug dans le code de test.
+	\begin{lstlisting}[style=monstyle]
+		import org.junit.Test;
+		import static org.junit.Assert.*;
+		
+		public class MathTest {
+			@Test
+			public void testExp10WithValidInput() {
+				assertEquals(100.0, Math.exp10(2), 0.0001);
+				assertEquals(1.0, Math.exp10(0), 0.0001);
+				// bug: on utilise une valeur attendue incorrecte pour le test
+				assertEquals(10000.0, Math.exp10(4), 0.0001);
+			}
+		}
+		
+	\end{lstlisting}
+Dans cet exemple, la méthode $testExp10WithValidInput()$ utilise une valeur attendue incorrecte pour le dernier test, ce qui causera un résultat de type FAILURE car la valeur renvoyée par la fonction $exp10$ ne correspond pas à la valeur attendue.
+En effet la valeur attendue pour $exp10(4)$ est $10^4 = 10 000$, or dans le test il est indiqué $10000.0$, il s'agit d'une erreur de saisie.
+\end{enumerate}
+\subsubsection{Question 5: Design patterns}
+Imaginons une application qui gère un catalogue d'hôtels et le nombre de chambres disponibles dans chacun, et permet à un client de réserver des nuits dans différents hôtels pour son prochain « road trip »
+Cette application utilise une conception orientée objet, c'est-à-dire que les hôtels, le catalogue, et les chambres réservées par chaque client sont des instances d'objets. Les hôtels par exemple possèdent un nom (String), un nombre de chambre maximum (int), un prix par nuit pour une chambre (int).
+Les interactions avec l'application, se feront en mode console (saisie clavier et affichage texte à l'écran). Lorsque l'application est lancée, elle doit présenter au client le catalogue des hôtels.
+l'application entre ensuite dans une boucle qui permet de créer un voyage, de réserver (choix de l'hôtel et d'une date). L'affichage présente alors à chaque fois, en sus du catalogue, la liste de ses réservations déjà effectuées (initialement vide), et le prix total des chambres d'hôtel réservées pour ce voyage (initialement 0C). L'utilisateur a aussi la possibilité de mettre fin à cette boucle, soit en confirmant la réservation du voyage, soit en annulant. En cas de réservation, le nombre de chambres disponibles dans les hôtels réservés est bien entendu réduit afin de refléter fidèlement les disponibilités.
+L'application exploitera le design pattern "Observer" pendant cette boucle de réservation, afin de mettre à jour l'affichage prévu ci-dessus. Lorsque le contenu du voyage est modifié (interaction du client avec l'application), un observer est notifié, lui permettant d'afficher le nécessaire, précédé de la phrase "Je suis un observateur du panier. Voici les détails de votre voyage:"
+\begin{enumerate}
+\item Veuillez écrire le code en langage JAVA des différentes classes participantes du design pattern Observer.
+\begin{lstlisting}[style=monstyle]
+	// Classe abstraite pour les observateurs
+	abstract class Observer {
+		protected Trip trip;
+		public abstract void update();
+	}
+	
+	// Classe pour les r\'eservations de chambres d'h\^otel
+	class HotelReservation extends Observer {
+		public HotelReservation(Trip trip) {
+			this.trip = trip;
+			this.trip.attach(this);
+		}
+		
+		@Override
+		public void update() {
+			System.out.println("Je suis un observateur de la r\'eservation de chambres d'h\^otel. Voici les d\'etails de votre voyage:");
+			System.out.println("Liste des r\'eservations : " + trip.getReservations());
+			System.out.println("Prix total des r\'eservations : " + trip.getTotalPrice());
+		}
+	}
+	
+	// Classe pour le voyage
+	class Trip {
+		private List<Hotel> reservations;
+		private double totalPrice;
+		private List<Observer> observers;
+		
+		public Trip() {
+			this.reservations = new ArrayList<Hotel>();
+			this.totalPrice = 0;
+			this.observers = new ArrayList<Observer>();
+		}
+		
+		public void attach(Observer observer) {
+			observers.add(observer);
+		}
+		
+		public void detach(Observer observer) {
+			observers.remove(observer);
+		}
+		
+		public void notifyObservers() {
+			for (Observer observer : observers) {
+				observer.update();
+			}
+		}
+		
+		public void addReservation(Hotel hotel) {
+			reservations.add(hotel);
+			totalPrice += hotel.getPrice();
+			notifyObservers();
+		}
+		
+		public void removeReservation(Hotel hotel) {
+			reservations.remove(hotel);
+			totalPrice -= hotel.getPrice();
+			notifyObservers();
+		}
+		
+		public List<Hotel> getReservations() {
+			return reservations;
+		}
+		
+		public double getTotalPrice() {
+			return totalPrice;
+		}
+	}
+	
+\end{lstlisting}
+Dans cet exemple, la classe Trip représente le voyage, la classe HotelReservation représente les réservations d'hôtel et est définie comme un observateur, et la méthode update() est appelée lorsque le contenu du voyage est modifié. Les méthodes attach() et detach() permettent d'ajouter ou de supprimer des observateurs, et la méthode notifyObservers() permet de notifier tous les observateurs enregistrés lorsque le contenu du voyage est modifié.
+\item 
+\end{enumerate}

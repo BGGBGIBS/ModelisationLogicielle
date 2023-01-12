@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.27)  8 JAN 2023 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.27)  12 JAN 2023 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1469,12 +1469,12 @@ Package biblatex Info: Reference segment=0 on input line 5.
 \openout2 = `./Pages/Couverture/titlepage.aux'.
 
  (./Pages/Couverture/titlepage.tex
-<./Images/Logos/fs.pdf, id=111, 517.935pt x 265.2309pt>
+<./Images/Logos/fs.pdf, id=119, 517.935pt x 265.2309pt>
 File: ./Images/Logos/fs.pdf Graphic file (type pdf)
 <use ./Images/Logos/fs.pdf>
 Package pdftex.def Info: ./Images/Logos/fs.pdf  used on input line 7.
 (pdftex.def)             Requested size: 145.11053pt x 74.30865pt.
-<./Images/Logos/umons_charleroi.png, id=112, 388.45125pt x 130.4875pt>
+<./Images/Logos/umons_charleroi.png, id=120, 388.45125pt x 130.4875pt>
 File: ./Images/Logos/umons_charleroi.png Graphic file (type png)
 <use ./Images/Logos/umons_charleroi.png>
 Package pdftex.def Info: ./Images/Logos/umons_charleroi.png  used on input line
@@ -1556,7 +1556,7 @@ Underfull \vbox (badness 1648) has occurred while \output is active []
 
 ]
 [4] (./Pages/Section1/CasUtilisation/casutilisation.tex
-<./Images/Diagrammes/diagram_usecase_ex_atm.png, id=196, 716.6775pt x 489.83pt>
+<./Images/Diagrammes/diagram_usecase_ex_atm.png, id=206, 716.6775pt x 489.83pt>
 
 File: ./Images/Diagrammes/diagram_usecase_ex_atm.png Graphic file (type png)
 <use ./Images/Diagrammes/diagram_usecase_ex_atm.png>
@@ -1565,7 +1565,7 @@ n input line 35.
 (pdftex.def)             Requested size: 483.69687pt x 330.59856pt.
  [5 <./Images/Diagrammes/diagram_usecase_ex_atm.png>]) (./Pages/Section1/Activi
 te/activite.tex
-<./Images/Diagrammes/diagram_activite_elements_activite.png, id=208, 224.84pt x
+<./Images/Diagrammes/diagram_activite_elements_activite.png, id=218, 224.84pt x
  99.37125pt>
 File: ./Images/Diagrammes/diagram_activite_elements_activite.png Graphic file (
 type png)
@@ -1573,7 +1573,7 @@ type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_activite
 .png  used on input line 18.
 (pdftex.def)             Requested size: 89.9344pt x 39.74779pt.
-<./Images/Diagrammes/diagram_activite_elements_activite_initial.png, id=209, 63
+<./Images/Diagrammes/diagram_activite_elements_activite_initial.png, id=219, 63
 .23625pt x 58.2175pt>
 File: ./Images/Diagrammes/diagram_activite_elements_activite_initial.png Graphi
 c file (type png)
@@ -1581,7 +1581,7 @@ c file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_activite
 _initial.png  used on input line 24.
 (pdftex.def)             Requested size: 12.64702pt x 11.64328pt.
-<./Images/Diagrammes/diagram_activite_elements_finflux.png, id=210, 136.51pt x 
+<./Images/Diagrammes/diagram_activite_elements_finflux.png, id=220, 136.51pt x 
 50.1875pt>
 File: ./Images/Diagrammes/diagram_activite_elements_finflux.png Graphic file (t
 ype png)
@@ -1589,7 +1589,7 @@ ype png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_finflux.
 png  used on input line 30.
 (pdftex.def)             Requested size: 27.30151pt x 10.03731pt.
-<./Images/Diagrammes/diagram_activite_elements_activite_final.png, id=211, 63.2
+<./Images/Diagrammes/diagram_activite_elements_activite_final.png, id=221, 63.2
 3625pt x 58.2175pt>
 File: ./Images/Diagrammes/diagram_activite_elements_activite_final.png Graphic 
 file (type png)
@@ -1597,7 +1597,7 @@ file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_activite
 _final.png  used on input line 36.
 (pdftex.def)             Requested size: 12.64702pt x 11.64328pt.
-<./Images/Diagrammes/diagram_activite_elements_fluxcommande.png, id=212, 224.84
+<./Images/Diagrammes/diagram_activite_elements_fluxcommande.png, id=222, 224.84
 pt x 99.37125pt>
 File: ./Images/Diagrammes/diagram_activite_elements_fluxcommande.png Graphic fi
 le (type png)
@@ -1605,7 +1605,7 @@ le (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_fluxcomm
 ande.png  used on input line 42.
 (pdftex.def)             Requested size: 96.73788pt x 42.75458pt.
-<./Images/Diagrammes/diagram_activite_elements_pointjonction.png, id=213, 704.6
+<./Images/Diagrammes/diagram_activite_elements_pointjonction.png, id=223, 704.6
 325pt x 170.6375pt>
 File: ./Images/Diagrammes/diagram_activite_elements_pointjonction.png Graphic f
 ile (type png)
@@ -1613,7 +1613,7 @@ ile (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_pointjon
 ction.png  used on input line 47.
 (pdftex.def)             Requested size: 241.84843pt x 58.56535pt.
-<./Images/Diagrammes/diagram_activite_elements_barresynchro.png, id=214, 623.32
+<./Images/Diagrammes/diagram_activite_elements_barresynchro.png, id=224, 623.32
 875pt x 232.87pt>
 File: ./Images/Diagrammes/diagram_activite_elements_barresynchro.png Graphic fi
 le (type png)
@@ -1621,7 +1621,7 @@ le (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_barresyn
 chro.png  used on input line 52.
 (pdftex.def)             Requested size: 241.84843pt x 90.35344pt.
-<./Images/Diagrammes/diagram_activite_elements_signaux.png, id=215, 741.77126pt
+<./Images/Diagrammes/diagram_activite_elements_signaux.png, id=225, 741.77126pt
  x 241.90375pt>
 File: ./Images/Diagrammes/diagram_activite_elements_signaux.png Graphic file (t
 ype png)
@@ -1629,14 +1629,14 @@ ype png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_signaux.
 png  used on input line 57.
 (pdftex.def)             Requested size: 241.84843pt x 78.86877pt.
-<./Images/Diagrammes/diagram_activite_resume.png, id=216, 1084.05pt x 370.38374
+<./Images/Diagrammes/diagram_activite_resume.png, id=226, 1084.05pt x 370.38374
 pt>
 File: ./Images/Diagrammes/diagram_activite_resume.png Graphic file (type png)
 <use ./Images/Diagrammes/diagram_activite_resume.png>
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_resume.png  used 
 on input line 66.
 (pdftex.def)             Requested size: 483.69687pt x 165.26389pt.
-<./Images/Diagrammes/diagram_activite_ex_complet.png, id=217, 963.6pt x 997.727
+<./Images/Diagrammes/diagram_activite_ex_complet.png, id=227, 963.6pt x 997.727
 5pt>
 File: ./Images/Diagrammes/diagram_activite_ex_complet.png Graphic file (type pn
 g)
@@ -1653,7 +1653,7 @@ Images/Diagrammes/diagram_activite_elements_barresynchro.png> <./Images/Diagram
 mes/diagram_activite_elements_signaux.png> <./Images/Diagrammes/diagram_activit
 e_resume.png>] [7 <./Images/Diagrammes/diagram_activite_ex_complet.png>])
 (./Pages/Section1/Interaction/interaction.tex
-<./Images/Diagrammes/diagram_interaction_ex_atm_usecase.png, id=241, 820.06375p
+<./Images/Diagrammes/diagram_interaction_ex_atm_usecase.png, id=251, 820.06375p
 t x 617.30624pt>
 File: ./Images/Diagrammes/diagram_interaction_ex_atm_usecase.png Graphic file (
 type png)
@@ -1661,7 +1661,7 @@ type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_interaction_ex_atm_usecase
 .png  used on input line 9.
 (pdftex.def)             Requested size: 217.66211pt x 163.83969pt.
-<./Images/Diagrammes/diagram_interaction_ex_atm.png, id=242, 710.655pt x 624.33
+<./Images/Diagrammes/diagram_interaction_ex_atm.png, id=252, 710.655pt x 624.33
 25pt>
 File: ./Images/Diagrammes/diagram_interaction_ex_atm.png Graphic file (type png
 )
@@ -1694,7 +1694,7 @@ Underfull \vbox (badness 7595) has occurred while \output is active []
 
  [9]
 [10] (./Pages/Section1/Sequence/sequence.tex
-<./Images/Diagrammes/diagram_sequence_elements.png, id=267, 1023.825pt x 673.51
+<./Images/Diagrammes/diagram_sequence_elements.png, id=277, 1023.825pt x 673.51
 625pt>
 File: ./Images/Diagrammes/diagram_sequence_elements.png Graphic file (type png)
 
@@ -1707,7 +1707,7 @@ Underfull \hbox (badness 2368) in paragraph at lines 77--77
 []|\T1/cmr/m/n/10 Référence à un autre di-a-gramme de
  []
 
-<./Images/Diagrammes/diagram_sequence_fragmentscombines1.png, id=277, 1035.87pt
+<./Images/Diagrammes/diagram_sequence_fragmentscombines1.png, id=287, 1035.87pt
  x 603.25375pt>
 File: ./Images/Diagrammes/diagram_sequence_fragmentscombines1.png Graphic file 
 (type png)
@@ -1715,7 +1715,7 @@ File: ./Images/Diagrammes/diagram_sequence_fragmentscombines1.png Graphic file
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_fragmentscombines
 1.png  used on input line 92.
 (pdftex.def)             Requested size: 266.03474pt x 154.92766pt.
-<./Images/Diagrammes/diagram_sequence_fragmentscombines.png, id=278, 736.7525pt
+<./Images/Diagrammes/diagram_sequence_fragmentscombines.png, id=288, 736.7525pt
  x 522.95375pt>
 File: ./Images/Diagrammes/diagram_sequence_fragmentscombines.png Graphic file (
 type png)
@@ -1723,7 +1723,7 @@ type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_fragmentscombines
 .png  used on input line 97.
 (pdftex.def)             Requested size: 193.47578pt x 137.32927pt.
-<./Images/Diagrammes/diagram_sequence_ex_fragmentscombines.png, id=279, 1035.87
+<./Images/Diagrammes/diagram_sequence_ex_fragmentscombines.png, id=289, 1035.87
 pt x 686.565pt>
 File: ./Images/Diagrammes/diagram_sequence_ex_fragmentscombines.png Graphic fil
 e (type png)
@@ -1731,7 +1731,7 @@ e (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_ex_fragmentscombi
 nes.png  used on input line 107.
 (pdftex.def)             Requested size: 217.66211pt x 144.25623pt.
-<./Images/Diagrammes/diagram_sequence_fc_critical.png, id=280, 920.43875pt x 62
+<./Images/Diagrammes/diagram_sequence_fc_critical.png, id=290, 920.43875pt x 62
 6.34pt>
 File: ./Images/Diagrammes/diagram_sequence_fc_critical.png Graphic file (type p
 ng)
@@ -1739,14 +1739,14 @@ ng)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_fc_critical.png  
 used on input line 112.
 (pdftex.def)             Requested size: 217.66211pt x 148.11696pt.
-<./Images/Diagrammes/diagram_sequence_fc_par.png, id=281, 790.955pt x 595.22375
+<./Images/Diagrammes/diagram_sequence_fc_par.png, id=291, 790.955pt x 595.22375
 pt>
 File: ./Images/Diagrammes/diagram_sequence_fc_par.png Graphic file (type png)
 <use ./Images/Diagrammes/diagram_sequence_fc_par.png>
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_fc_par.png  used 
 on input line 117.
 (pdftex.def)             Requested size: 217.66211pt x 163.80057pt.
-<./Images/Diagrammes/diagram_sequence_fc_break.png, id=282, 812.03375pt x 734.7
+<./Images/Diagrammes/diagram_sequence_fc_break.png, id=292, 812.03375pt x 734.7
 45pt>
 File: ./Images/Diagrammes/diagram_sequence_fc_break.png Graphic file (type png)
 
@@ -1760,7 +1760,7 @@ ram_sequence_ex_fragmentscombines.png> <./Images/Diagrammes/diagram_sequence_fc
 _critical.png> <./Images/Diagrammes/diagram_sequence_fc_par.png> <./Images/Diag
 rammes/diagram_sequence_fc_break.png>]
 (./Pages/Section1/StateChart/statechart.tex
-<./Images/Diagrammes/diagram_statechart_package.png, id=306, 364.36125pt x 120.
+<./Images/Diagrammes/diagram_statechart_package.png, id=316, 364.36125pt x 120.
 45pt>
 File: ./Images/Diagrammes/diagram_statechart_package.png Graphic file (type png
 )
@@ -1791,7 +1791,7 @@ file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_activite
 _final.png  used on input line 48.
 (pdftex.def)             Requested size: 12.64702pt x 11.64328pt.
-<./Images/Diagrammes/diagram_statechart_transition.png, id=307, 544.0325pt x 84
+<./Images/Diagrammes/diagram_statechart_transition.png, id=317, 544.0325pt x 84
 .315pt>
 File: ./Images/Diagrammes/diagram_statechart_transition.png Graphic file (type 
 png)
@@ -1799,7 +1799,7 @@ png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_transition.png 
  used on input line 53.
 (pdftex.def)             Requested size: 241.84843pt x 37.48209pt.
-<./Images/Diagrammes/diagram_statechart_actiontransition.png, id=308, 967.615pt
+<./Images/Diagrammes/diagram_statechart_actiontransition.png, id=318, 967.615pt
  x 220.825pt>
 File: ./Images/Diagrammes/diagram_statechart_actiontransition.png Graphic file 
 (type png)
@@ -1807,7 +1807,7 @@ File: ./Images/Diagrammes/diagram_statechart_actiontransition.png Graphic file
 Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_actiontransitio
 n.png  used on input line 59.
 (pdftex.def)             Requested size: 241.84843pt x 55.19263pt.
-<./Images/Diagrammes/diagram_statechart_activity_def.png, id=309, 499.8675pt x 
+<./Images/Diagrammes/diagram_statechart_activity_def.png, id=319, 499.8675pt x 
 96.36pt>
 File: ./Images/Diagrammes/diagram_statechart_activity_def.png Graphic file (typ
 e png)
@@ -1815,7 +1815,7 @@ e png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_activity_def.pn
 g  used on input line 64.
 (pdftex.def)             Requested size: 241.84843pt x 46.6213pt.
-<./Images/Diagrammes/diagram_statechart_etat_all.png, id=310, 1034.86626pt x 35
+<./Images/Diagrammes/diagram_statechart_etat_all.png, id=320, 1034.86626pt x 35
 3.32pt>
 File: ./Images/Diagrammes/diagram_statechart_etat_all.png Graphic file (type pn
 g)
@@ -1832,7 +1832,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--89
 iagram_statechart_transition.png> <./Images/Diagrammes/diagram_statechart_actio
 ntransition.png> <./Images/Diagrammes/diagram_statechart_activity_def.png> <./I
 mages/Diagrammes/diagram_statechart_etat_all.png>]
-<./Images/Diagrammes/diagram_statechart_pointjonctionstatique.png, id=327, 1049
+<./Images/Diagrammes/diagram_statechart_pointjonctionstatique.png, id=337, 1049
 .9225pt x 314.17375pt>
 File: ./Images/Diagrammes/diagram_statechart_pointjonctionstatique.png Graphic 
 file (type png)
@@ -1840,7 +1840,7 @@ file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_pointjonctionst
 atique.png  used on input line 111.
 (pdftex.def)             Requested size: 266.03474pt x 79.60748pt.
-<./Images/Diagrammes/diagram_statechart_pointjonctiondynamique.png, id=328, 708
+<./Images/Diagrammes/diagram_statechart_pointjonctiondynamique.png, id=338, 708
 .6475pt x 345.29pt>
 File: ./Images/Diagrammes/diagram_statechart_pointjonctiondynamique.png Graphic
  file (type png)
@@ -1849,7 +1849,7 @@ Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_pointjonctiondy
 namique.png  used on input line 116.
 (pdftex.def)             Requested size: 193.47578pt x 94.26747pt.
 <./Images/Diagrammes/diagram_statechart_ex_stopwatch_sansetatscomposites.png, i
-d=329, 949.5475pt x 367.3725pt>
+d=339, 949.5475pt x 367.3725pt>
 File: ./Images/Diagrammes/diagram_statechart_ex_stopwatch_sansetatscomposites.p
 ng Graphic file (type png)
 <use ./Images/Diagrammes/diagram_statechart_ex_stopwatch_sansetatscomposites.pn
@@ -1858,7 +1858,7 @@ Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_ex_stopwatch_sa
 nsetatscomposites.png  used on input line 127.
 (pdftex.def)             Requested size: 241.84843pt x 93.56943pt.
 <./Images/Diagrammes/diagram_statechart_ex_stopwatch_avecetatscomposites.png, i
-d=330, 970.62625pt x 410.53375pt>
+d=340, 970.62625pt x 410.53375pt>
 File: ./Images/Diagrammes/diagram_statechart_ex_stopwatch_avecetatscomposites.p
 ng Graphic file (type png)
 <use ./Images/Diagrammes/diagram_statechart_ex_stopwatch_avecetatscomposites.pn
@@ -1943,33 +1943,33 @@ Chapitre 3.
 
 ]
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/Q
-uestion1_DiagramUseCase.jpg, id=1009, 804.00375pt x 792.9625pt>
+uestion1_DiagramUseCase.jpg, id=1019, 804.00375pt x 792.9625pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question1_DiagramUseCase.jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Question1_DiagramUseCase.jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Question1_DiagramUseCase.jpg  used on input line 13.
+dLog/Examen2022/Images/Question1_DiagramUseCase.jpg  used on input line 14.
 (pdftex.def)             Requested size: 483.69687pt x 477.05162pt.
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/Q
-uestion2_DiagramActivite.jpg, id=1010, 1073.00874pt x 1247.66125pt>
+uestion2_DiagramActivite.jpg, id=1020, 1073.00874pt x 1247.66125pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question2_DiagramActivite.jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Question2_DiagramActivite.jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Question2_DiagramActivite.jpg  used on input line 19.
+dLog/Examen2022/Images/Question2_DiagramActivite.jpg  used on input line 20.
 (pdftex.def)             Requested size: 483.69687pt x 562.4133pt.
  [26 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question1_DiagramUseCase.jpg>]
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/Q
-uestion3_StateChart.jpg, id=1020, 631.35875pt x 449.68pt>
+uestion3_StateChart.jpg, id=1030, 631.35875pt x 449.68pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question3_StateChart.jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Question3_StateChart.jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Question3_StateChart.jpg  used on input line 25.
+dLog/Examen2022/Images/Question3_StateChart.jpg  used on input line 26.
 (pdftex.def)             Requested size: 483.69687pt x 344.51183pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1977,13 +1977,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [27 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question2_DiagramActivite.jpg>]
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/Q
-uestion4_DiagramClass.jpg, id=1027, 775.89874pt x 615.29875pt>
+uestion4_DiagramClass.jpg, id=1037, 775.89874pt x 615.29875pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question4_DiagramClass.jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Question4_DiagramClass.jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Question4_DiagramClass.jpg  used on input line 31.
+dLog/Examen2022/Images/Question4_DiagramClass.jpg  used on input line 32.
 (pdftex.def)             Requested size: 483.69687pt x 383.58435pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1991,26 +1991,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [28 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question3_StateChart.jpg>]
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/S
-equence Diagram .jpg, id=1034, 755.82375pt x 777.90625pt>
+equence Diagram .jpg, id=1044, 755.82375pt x 777.90625pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Sequence Diagram .jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Sequence Diagram .jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Sequence Diagram .jpg  used on input line 37.
+dLog/Examen2022/Images/Sequence Diagram .jpg  used on input line 38.
 (pdftex.def)             Requested size: 483.69687pt x 497.83456pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question4_DiagramClass.jpg>] [30 </Users/baptistegrosjean/Documents/VPProje
-cts/ExamensModLog/Examen2022/Images/Sequence Diagram .jpg>]) [31] (./umonsmodlo
-g.lof)
+cts/ExamensModLog/Examen2022/Images/Sequence Diagram .jpg>] [31] [32]) [33]
+(./umonsmodlog.lof)
 \tf@lof=\write7
 \openout7 = `umonsmodlog.lof'.
 
-
-[32
+ [34
 
 
 
@@ -2018,51 +2017,52 @@ g.lof)
 \tf@lot=\write8
 \openout8 = `umonsmodlog.lot'.
 
- [33
+ [35
 
 ] (./umonsmodlog.aux
 (./Pages/Couverture/titlepage.aux) (./Pages/Section1/section1.aux)
 (./Pages/Section2/section2.aux) (./Pages/Section4/section4.aux))
 Package rerunfilecheck Info: File `umonsmodlog.out' has not changed.
-(rerunfilecheck)             Checksum: 98B1FBF7073AD0D1FFFFE361B7F854B0;3402.
+(rerunfilecheck)             Checksum: 8CDF204FC913CF3CA3A5606CAE44F188;3886.
 Package logreq Info: Writing requests to 'umonsmodlog.run.xml'.
 \openout1 = `umonsmodlog.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44016 strings out of 476093
- 888223 string characters out of 5791584
+ 44171 strings out of 476093
+ 890558 string characters out of 5791584
  3583793 words of memory out of 5000000
- 62893 multiletter control sequences out of 15000+600000
+ 62926 multiletter control sequences out of 15000+600000
  529756 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,19n,105p,784b,1805s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,19n,105p,784b,2667s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<
 /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive
-/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2
-022/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/202
-2/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2022/
-texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texm
-f-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/cm-super/sfti0500.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2022/texmf-dist/f
-onts/type1/public/cm-super/sftt1000.pfb>
-Output written on umonsmodlog.pdf (33 pages, 4496161 bytes).
+r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx0500.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/
+texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2022/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2022/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dis
+t/fonts/type1/public/cm-super/sfti0500.pfb></usr/local/texlive/2022/texmf-dist/
+fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/public/cm-super/sftt1000.pfb>
+Output written on umonsmodlog.pdf (35 pages, 4528593 bytes).
 PDF statistics:
- 1344 PDF objects out of 1440 (max. 8388607)
- 1187 compressed objects within 12 object streams
- 738 named destinations out of 1000 (max. 500000)
- 401 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1511 PDF objects out of 1728 (max. 8388607)
+ 1348 compressed objects within 14 object streams
+ 860 named destinations out of 1000 (max. 500000)
+ 417 words of extra memory for PDF output out of 10000 (max. 10000000)
 
