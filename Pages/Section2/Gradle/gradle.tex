@@ -1,0 +1,43 @@
+\section{Gradle}\label{sec:gradle}
+\subsection{D\'efinition}
+\begin{definition}[Gradle]
+	Gradle est un système de construction automatisé pour les projets Java et autres, utilisant un fichier de configuration basé sur Groovy pour décrire les tâches de construction et les dépendances.
+\end{definition}
+
+\subsection{Cr\'eation d'un projet Gradle via CLI}
+\begin{lstlisting}[style=monstyle]
+	cd <repertoire ou creer le projet>
+	mkdir <nom du projet>
+	cd <nom du repertoire cree>
+	gradle init
+	// tout par defaut sauf application
+	gradle build
+	gradle run
+	gradle test
+	
+	
+\end{lstlisting}
+
+Dans le fichier \emph{build.gradle}, ajouter ces lignes entre les sections \emph{plugins} et \emph{repositories}:
+
+\begin{lstlisting}[style=monstyle]
+	apply plugin : 'java';
+	apply plugin : 'eclipse';
+	apply plugin : 'idea';
+\end{lstlisting}
+
+\begin{table}[H]
+	\begin{tabular}{|l|l|}
+		\toprule
+		\textbf{Commande CLI Gradle} & \textbf{Signification} \\ \midrule
+		gradle build & Construit les projets et leurs dépendances.\\
+		gradle tasks & Affiche toutes les tâches de build disponibles. \\
+		gradle test & Exécute les tests unitaires. \\
+		gradle run & Exécute une application. \\
+		gradle clean & Supprime les fichiers de construction générés. \\
+		gradle wrapper & Génère les scripts d'enveloppe Gradle pour exécuter Gradle sans installation. \\
+		gradle dependencies & Affiche les dépendances du projet. \\
+		gradle help --task & Affiche de l'aide pour une tâche spécifique. \\
+		gradle projects & Affiche la hiérarchie de projet. \\ \bottomrule
+	\end{tabular}
+\end{table}

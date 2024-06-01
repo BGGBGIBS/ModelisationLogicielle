@@ -1,3 +1,4 @@
+\part{Corrig\'es}
 \chapter{Examens Corrig\'es}\label{chap:examens}
 
 \newpage
@@ -49,6 +50,8 @@ Il s'agit de l'exemple 3 car le UseCase Maintenance inclus dans tous les cas les
 	\item Dites dans laquelle/lesquelles des classes dont vous parlez ci-dessus et sous quelle forme peuvent être mémorisés des états historiques. Dessinez un diagramme de classes UML simplifié, ne comportant que le nom des classes et les informations permettant de voir apparaitre les états composites et historiques.
 \end{enumerate}
 \subsubsection{Question 3}
+
+\newpage
 \subsubsection{Question 4: Test de logiciel}
 \begin{enumerate}
 	\item Une fonction statique de calcul de l'exponentielle de base 10 (exp10) est implémentée dans une Classe mathématique (Math). Elle renvoie une exception dans le cas où la valeur d'entée est telle que le résultat du calcul de l'exponentielle entraine une valeur numérique qui dépasse la valeur maximum d'un double. Le prototype de cette fonction est le suivant:
@@ -115,6 +118,8 @@ Ainsi, le test échouera car il n'y a pas de tolérance pour l'erreur de calcul.
 Dans cet exemple, la méthode $testExp10WithValidInput()$ utilise une valeur attendue incorrecte pour le dernier test, ce qui causera un résultat de type FAILURE car la valeur renvoyée par la fonction $exp10$ ne correspond pas à la valeur attendue.
 En effet la valeur attendue pour $exp10(4)$ est $10^4 = 10 000$, or dans le test il est indiqué $10000.0$, il s'agit d'une erreur de saisie.
 \end{enumerate}
+
+\newpage
 \subsubsection{Question 5: Design patterns}
 Imaginons une application qui gère un catalogue d'hôtels et le nombre de chambres disponibles dans chacun, et permet à un client de réserver des nuits dans différents hôtels pour son prochain « road trip »
 Cette application utilise une conception orientée objet, c'est-à-dire que les hôtels, le catalogue, et les chambres réservées par chaque client sont des instances d'objets. Les hôtels par exemple possèdent un nom (String), un nombre de chambre maximum (int), un prix par nuit pour une chambre (int).
@@ -194,5 +199,5 @@ L'application exploitera le design pattern "Observer" pendant cette boucle de r�
 	
 \end{lstlisting}
 Dans cet exemple, la classe Trip représente le voyage, la classe HotelReservation représente les réservations d'hôtel et est définie comme un observateur, et la méthode update() est appelée lorsque le contenu du voyage est modifié. Les méthodes attach() et detach() permettent d'ajouter ou de supprimer des observateurs, et la méthode notifyObservers() permet de notifier tous les observateurs enregistrés lorsque le contenu du voyage est modifié.
-\item 
+
 \end{enumerate}

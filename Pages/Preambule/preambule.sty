@@ -92,6 +92,11 @@ frame=single,
 backgroundcolor=\color{lightgray},
 numbers=left
 }
+\usepackage[
+type={CC},
+modifier={by-nc-sa},
+version={4.0},
+]{doclicense}
 \usepackage{booktabs}
 \usepackage{diagbox}
 %\usepackage{tikz} % To generate the plot from csv
@@ -108,7 +113,8 @@ numbers=left
 %footer
 \renewcommand{\footrulewidth}{1pt}
 \fancyfoot[C]{\textbf{page \thepage}} 
-\fancyfoot[L]{Baptiste Grosjean}
+\fancyfoot[L]{\doclicenseNameRef
+	— \copyright Baptiste Grosjean}
 \fancyfoot[R]{Annéee académique 2022-2023}
 %bibilography
 \usepackage[backend=biber,natbib=true,sortcites=true,style=numeric,sorting=none]{biblatex}

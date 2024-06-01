@@ -1,4 +1,7 @@
 \subsection{Singleton}
+%\begin{definition}[Singleton]
+%	Le design pattern singleton est un patron de conception qui.
+%\end{definition}
 \begin{table}[H]
 \caption{Design pattern Singleton}
 \label{tbl:design_pattern_singleton}
@@ -14,6 +17,8 @@
 \textbf{Avantages} & Permet de garantir qu'il n'existe qu'une seule instance d'une classe donnée dans l'application. Facilite le partage de ressources et la gestion de l'accès à celles-ci.\\
 \cmidrule(lr){1-2}
 \textbf{Inconvénients} & Peut rendre le code difficile à tester, car il n'est pas possible de créer plusieurs instances de la classe pour les tests. Peut également rendre le code plus difficile à maintenir si utilisé de manière excessive.\\
+\cmidrule{1-2}
+\textbf{\'El\'ements} & Singleton \\
 \cmidrule(lr){1-2}
 \textbf{Exemples} &
 \hspace{4mm}
@@ -96,12 +101,7 @@ String property = ConfigurationManager.getInstance().getProperty("key");
 \end{minipage}
 \end{minipage}
 \\
-%\cmidrule(lr){1-2}
-%\textbf{Structure} & 
-
-%\\
 \bottomrule
 \end{tabular}
 \end{adjustbox}
 \end{table}
-

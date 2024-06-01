@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.27)  12 JAN 2023 16:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.27)  15 JAN 2023 19:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -992,7 +992,60 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-(/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/doclicense/doclicense.sty
+Package: doclicense 2022/05/18 v3.2.0 Support for putting documents under a lic
+ense
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+))
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count365
+\decimalpart=\count366
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks52
+\verbatim@line=\toks53
+\verbatim@in@stream=\read4
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperxmp/hyperxmp.sty
+Package: hyperxmp 2020/11/22 v5.9 Store hyperref metadata in XMP format
+\hyxmp@aep@toks=\toks54
+
+(/usr/local/texlive/2022/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/totpages/totpages.sty
+Package: totpages 2005/09/19 v2.00 Totpages Package (muewi)
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/everyshi/everyshi.sty
+Package: everyshi 2020/11/18 v4.00 EveryShipout Package
+))
+(/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+\doclicense@hsize=\skip79
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/doclicense/doclicense-english.ldf
+File: doclicense-english.ldf 
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen345
 \lightrulewidth=\dimen346
@@ -1004,12 +1057,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen352
 \cmidrulekern=\dimen353
 \defaultaddspace=\dimen354
-\@cmidla=\count365
-\@cmidlb=\count366
+\@cmidla=\count367
+\@cmidlb=\count368
 \@aboverulesep=\dimen355
 \@belowrulesep=\dimen356
-\@thisruleclass=\count367
-\@lastruleclass=\count368
+\@thisruleclass=\count369
+\@lastruleclass=\count370
 \@thisrulewidth=\dimen357
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/diagbox/diagbox.sty
@@ -1027,7 +1080,7 @@ Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
-\pIIe@GRAPH=\toks52
+\pIIe@GRAPH=\toks55
 \@arclen=\dimen358
 \@arcrad=\dimen359
 \pIIe@tempdima=\dimen360
@@ -1052,71 +1105,68 @@ Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count369
+\lrq@indent=\count371
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-)
-\c@tabx@nest=\count370
-\c@listtotal=\count371
-\c@listcount=\count372
-\c@liststart=\count373
-\c@liststop=\count374
-\c@citecount=\count375
-\c@citetotal=\count376
-\c@multicitecount=\count377
-\c@multicitetotal=\count378
-\c@instcount=\count379
-\c@maxnames=\count380
-\c@minnames=\count381
-\c@maxitems=\count382
-\c@minitems=\count383
-\c@citecounter=\count384
-\c@maxcitecounter=\count385
-\c@savedcitecounter=\count386
-\c@uniquelist=\count387
-\c@uniquename=\count388
-\c@refsection=\count389
-\c@refsegment=\count390
-\c@maxextratitle=\count391
-\c@maxextratitleyear=\count392
-\c@maxextraname=\count393
-\c@maxextradate=\count394
-\c@maxextraalpha=\count395
-\c@abbrvpenalty=\count396
-\c@highnamepenalty=\count397
-\c@lownamepenalty=\count398
-\c@maxparens=\count399
-\c@parenlevel=\count400
-\blx@tempcnta=\count401
-\blx@tempcntb=\count402
-\blx@tempcntc=\count403
-\c@blx@maxsection=\count404
-\blx@maxsegment@0=\count405
-\blx@notetype=\count406
-\blx@parenlevel@text=\count407
-\blx@parenlevel@foot=\count408
-\blx@sectionciteorder@0=\count409
-\blx@sectionciteorderinternal@0=\count410
-\blx@entrysetcounter=\count411
-\blx@biblioinstance=\count412
-\labelnumberwidth=\skip79
-\labelalphawidth=\skip80
-\biblabelsep=\skip81
-\bibitemsep=\skip82
-\bibnamesep=\skip83
-\bibinitsep=\skip84
-\bibparsep=\skip85
-\bibhang=\skip86
-\blx@bcfin=\read4
+\c@tabx@nest=\count372
+\c@listtotal=\count373
+\c@listcount=\count374
+\c@liststart=\count375
+\c@liststop=\count376
+\c@citecount=\count377
+\c@citetotal=\count378
+\c@multicitecount=\count379
+\c@multicitetotal=\count380
+\c@instcount=\count381
+\c@maxnames=\count382
+\c@minnames=\count383
+\c@maxitems=\count384
+\c@minitems=\count385
+\c@citecounter=\count386
+\c@maxcitecounter=\count387
+\c@savedcitecounter=\count388
+\c@uniquelist=\count389
+\c@uniquename=\count390
+\c@refsection=\count391
+\c@refsegment=\count392
+\c@maxextratitle=\count393
+\c@maxextratitleyear=\count394
+\c@maxextraname=\count395
+\c@maxextradate=\count396
+\c@maxextraalpha=\count397
+\c@abbrvpenalty=\count398
+\c@highnamepenalty=\count399
+\c@lownamepenalty=\count400
+\c@maxparens=\count401
+\c@parenlevel=\count402
+\blx@tempcnta=\count403
+\blx@tempcntb=\count404
+\blx@tempcntc=\count405
+\c@blx@maxsection=\count406
+\blx@maxsegment@0=\count407
+\blx@notetype=\count408
+\blx@parenlevel@text=\count409
+\blx@parenlevel@foot=\count410
+\blx@sectionciteorder@0=\count411
+\blx@sectionciteorderinternal@0=\count412
+\blx@entrysetcounter=\count413
+\blx@biblioinstance=\count414
+\labelnumberwidth=\skip80
+\labelalphawidth=\skip81
+\biblabelsep=\skip82
+\bibitemsep=\skip83
+\bibnamesep=\skip84
+\bibinitsep=\skip85
+\bibparsep=\skip86
+\bibhang=\skip87
+\blx@bcfin=\read5
 \blx@bcfout=\write4
 \blx@langwohyphens=\language88
-\c@mincomprange=\count413
-\c@maxcomprange=\count414
-\c@mincompwidth=\count415
+\c@mincomprange=\count415
+\c@maxcomprange=\count416
+\c@mincompwidth=\count417
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1127,88 +1177,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count416
-\c@savedafterword=\count417
-\c@annotator=\count418
-\c@savedannotator=\count419
-\c@author=\count420
-\c@savedauthor=\count421
-\c@bookauthor=\count422
-\c@savedbookauthor=\count423
-\c@commentator=\count424
-\c@savedcommentator=\count425
-\c@editor=\count426
-\c@savededitor=\count427
-\c@editora=\count428
-\c@savededitora=\count429
-\c@editorb=\count430
-\c@savededitorb=\count431
-\c@editorc=\count432
-\c@savededitorc=\count433
-\c@foreword=\count434
-\c@savedforeword=\count435
-\c@holder=\count436
-\c@savedholder=\count437
-\c@introduction=\count438
-\c@savedintroduction=\count439
-\c@namea=\count440
-\c@savednamea=\count441
-\c@nameb=\count442
-\c@savednameb=\count443
-\c@namec=\count444
-\c@savednamec=\count445
-\c@translator=\count446
-\c@savedtranslator=\count447
-\c@shortauthor=\count448
-\c@savedshortauthor=\count449
-\c@shorteditor=\count450
-\c@savedshorteditor=\count451
-\c@labelname=\count452
-\c@savedlabelname=\count453
-\c@institution=\count454
-\c@savedinstitution=\count455
-\c@lista=\count456
-\c@savedlista=\count457
-\c@listb=\count458
-\c@savedlistb=\count459
-\c@listc=\count460
-\c@savedlistc=\count461
-\c@listd=\count462
-\c@savedlistd=\count463
-\c@liste=\count464
-\c@savedliste=\count465
-\c@listf=\count466
-\c@savedlistf=\count467
-\c@location=\count468
-\c@savedlocation=\count469
-\c@organization=\count470
-\c@savedorganization=\count471
-\c@origlocation=\count472
-\c@savedoriglocation=\count473
-\c@origpublisher=\count474
-\c@savedorigpublisher=\count475
-\c@publisher=\count476
-\c@savedpublisher=\count477
-\c@language=\count478
-\c@savedlanguage=\count479
-\c@origlanguage=\count480
-\c@savedoriglanguage=\count481
-\c@pageref=\count482
-\c@savedpageref=\count483
-\shorthandwidth=\skip87
-\shortjournalwidth=\skip88
-\shortserieswidth=\skip89
-\shorttitlewidth=\skip90
-\shortauthorwidth=\skip91
-\shorteditorwidth=\skip92
-\locallabelnumberwidth=\skip93
-\locallabelalphawidth=\skip94
-\localshorthandwidth=\skip95
-\localshortjournalwidth=\skip96
-\localshortserieswidth=\skip97
-\localshorttitlewidth=\skip98
-\localshortauthorwidth=\skip99
-\localshorteditorwidth=\skip100
+\c@afterword=\count418
+\c@savedafterword=\count419
+\c@annotator=\count420
+\c@savedannotator=\count421
+\c@author=\count422
+\c@savedauthor=\count423
+\c@bookauthor=\count424
+\c@savedbookauthor=\count425
+\c@commentator=\count426
+\c@savedcommentator=\count427
+\c@editor=\count428
+\c@savededitor=\count429
+\c@editora=\count430
+\c@savededitora=\count431
+\c@editorb=\count432
+\c@savededitorb=\count433
+\c@editorc=\count434
+\c@savededitorc=\count435
+\c@foreword=\count436
+\c@savedforeword=\count437
+\c@holder=\count438
+\c@savedholder=\count439
+\c@introduction=\count440
+\c@savedintroduction=\count441
+\c@namea=\count442
+\c@savednamea=\count443
+\c@nameb=\count444
+\c@savednameb=\count445
+\c@namec=\count446
+\c@savednamec=\count447
+\c@translator=\count448
+\c@savedtranslator=\count449
+\c@shortauthor=\count450
+\c@savedshortauthor=\count451
+\c@shorteditor=\count452
+\c@savedshorteditor=\count453
+\c@labelname=\count454
+\c@savedlabelname=\count455
+\c@institution=\count456
+\c@savedinstitution=\count457
+\c@lista=\count458
+\c@savedlista=\count459
+\c@listb=\count460
+\c@savedlistb=\count461
+\c@listc=\count462
+\c@savedlistc=\count463
+\c@listd=\count464
+\c@savedlistd=\count465
+\c@liste=\count466
+\c@savedliste=\count467
+\c@listf=\count468
+\c@savedlistf=\count469
+\c@location=\count470
+\c@savedlocation=\count471
+\c@organization=\count472
+\c@savedorganization=\count473
+\c@origlocation=\count474
+\c@savedoriglocation=\count475
+\c@origpublisher=\count476
+\c@savedorigpublisher=\count477
+\c@publisher=\count478
+\c@savedpublisher=\count479
+\c@language=\count480
+\c@savedlanguage=\count481
+\c@origlanguage=\count482
+\c@savedoriglanguage=\count483
+\c@pageref=\count484
+\c@savedpageref=\count485
+\shorthandwidth=\skip88
+\shortjournalwidth=\skip89
+\shortserieswidth=\skip90
+\shorttitlewidth=\skip91
+\shortauthorwidth=\skip92
+\shorteditorwidth=\skip93
+\locallabelnumberwidth=\skip94
+\locallabelalphawidth=\skip95
+\localshorthandwidth=\skip96
+\localshortjournalwidth=\skip97
+\localshortserieswidth=\skip98
+\localshorttitlewidth=\skip99
+\localshortauthorwidth=\skip100
+\localshorteditorwidth=\skip101
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1220,19 +1270,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
-\c@textcitecount=\count484
-\c@textcitetotal=\count485
-\c@textcitemaxnames=\count486
-\c@biburlbigbreakpenalty=\count487
-\c@biburlbreakpenalty=\count488
-\c@biburlnumpenalty=\count489
-\c@biburlucpenalty=\count490
-\c@biburllcpenalty=\count491
+\c@textcitecount=\count486
+\c@textcitetotal=\count487
+\c@textcitemaxnames=\count488
+\c@biburlbigbreakpenalty=\count489
+\c@biburlbreakpenalty=\count490
+\c@biburlnumpenalty=\count491
+\c@biburlucpenalty=\count492
+\c@biburllcpenalty=\count493
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count492
+\c@smartand=\count494
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
@@ -1252,8 +1302,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count493
-\c@bbx:relatedtotal=\count494
+\c@bbx:relatedcount=\count495
+\c@bbx:relatedtotal=\count496
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1294,13 +1344,13 @@ Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count495
-\csq@gtype=\count496
-\csq@glevel=\count497
-\csq@qlevel=\count498
-\csq@maxlvl=\count499
-\csq@tshold=\count500
-\csq@ltx@everypar=\toks53
+\csq@reset=\count497
+\csq@gtype=\count498
+\csq@glevel=\count499
+\csq@qlevel=\count500
+\csq@maxlvl=\count501
+\csq@tshold=\count502
+\csq@ltx@everypar=\toks56
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
@@ -1316,9 +1366,15 @@ Package csquotes Info: Option 'babel' depreciated.
 Package csquotes Info: Enabling multilingual quotes.
 Package csquotes Info: Enabling multilingual quotes.
 ))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/ccicons/ccicons.sty
+Package: ccicons 2017/10/30 v1.6 LaTeX support for Creative Commons icons
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5.
+
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-
 (./umonsmodlog.aux (./Pages/Couverture/titlepage.aux)
 (./Pages/Section1/section1.aux) (./Pages/Section2/section2.aux)
 (./Pages/Section4/section4.aux))
@@ -1347,17 +1403,17 @@ LaTeX Info: Redefining \up on input line 5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count501
+\scratchcounter=\count503
 \scratchdimen=\dimen372
 \scratchbox=\box91
-\nofMPsegments=\count502
-\nofMParguments=\count503
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count504
+\nofMPsegments=\count504
+\nofMParguments=\count505
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count506
 \MPscratchDim=\dimen373
-\MPnumerator=\count505
-\makeMPintoPDFobject=\count506
-\everyMPtoPDFconversion=\toks55
+\MPnumerator=\count507
+\makeMPintoPDFobject=\count508
+\everyMPtoPDFconversion=\toks58
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -1442,7 +1498,7 @@ lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `french'. on input line 5.
-\c@lstlisting=\count507
+\c@lstlisting=\count509
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1469,12 +1525,12 @@ Package biblatex Info: Reference segment=0 on input line 5.
 \openout2 = `./Pages/Couverture/titlepage.aux'.
 
  (./Pages/Couverture/titlepage.tex
-<./Images/Logos/fs.pdf, id=119, 517.935pt x 265.2309pt>
+<./Images/Logos/fs.pdf, id=147, 517.935pt x 265.2309pt>
 File: ./Images/Logos/fs.pdf Graphic file (type pdf)
 <use ./Images/Logos/fs.pdf>
 Package pdftex.def Info: ./Images/Logos/fs.pdf  used on input line 7.
 (pdftex.def)             Requested size: 145.11053pt x 74.30865pt.
-<./Images/Logos/umons_charleroi.png, id=120, 388.45125pt x 130.4875pt>
+<./Images/Logos/umons_charleroi.png, id=148, 388.45125pt x 130.4875pt>
 File: ./Images/Logos/umons_charleroi.png Graphic file (type png)
 <use ./Images/Logos/umons_charleroi.png>
 Package pdftex.def Info: ./Images/Logos/umons_charleroi.png  used on input line
@@ -1491,23 +1547,37 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+) [1.1
 
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Image
-s/Logos/fs.pdf> <./Images/Logos/umons_charleroi.png>]) (./umonsmodlog.toc)
+s/Logos/fs.pdf> <./Images/Logos/umons_charleroi.png>]) (./Pages/Section0/sectio
+n0.tex
+<doclicense-CC-by-nc-sa-88x31.pdf, id=174, 90.3375pt x 31.61812pt>
+File: doclicense-CC-by-nc-sa-88x31.pdf Graphic file (type pdf)
+<use doclicense-CC-by-nc-sa-88x31.pdf>
+Package pdftex.def Info: doclicense-CC-by-nc-sa-88x31.pdf  used on input line 1
+.
+(pdftex.def)             Requested size: 99.97559pt x 34.9918pt.
+)
+[2.2
+
+
+ </usr/local/texlive/2022/texmf-dist/tex/latex/doclicense/images/doclicense-CC-
+by-nc-sa-88x31.pdf>] (./umonsmodlog.toc)
 \tf@toc=\write6
 \openout6 = `umonsmodlog.toc'.
 
- [2
-
-
+ [3.3
 
 ]
 \openout2 = `./Pages/Section1/section1.aux'.
 
 
-(./Pages/Section1/section1.tex
+(./Pages/Section1/section1.tex [4.4
+
+
+]
 Chapitre 1.
 (./Pages/Section1/Modelisation/modelisation.tex
 Underfull \hbox (badness 1281) in paragraph at lines 76--76
@@ -1551,21 +1621,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--96
 )
 Underfull \vbox (badness 1648) has occurred while \output is active []
 
- [3
-
+ [5.5
 
 ]
-[4] (./Pages/Section1/CasUtilisation/casutilisation.tex
-<./Images/Diagrammes/diagram_usecase_ex_atm.png, id=206, 716.6775pt x 489.83pt>
+[6.6] (./Pages/Section1/CasUtilisation/casutilisation.tex
+<./Images/Diagrammes/diagram_usecase_ex_atm.png, id=258, 716.6775pt x 489.83pt>
 
 File: ./Images/Diagrammes/diagram_usecase_ex_atm.png Graphic file (type png)
 <use ./Images/Diagrammes/diagram_usecase_ex_atm.png>
 Package pdftex.def Info: ./Images/Diagrammes/diagram_usecase_ex_atm.png  used o
 n input line 35.
 (pdftex.def)             Requested size: 483.69687pt x 330.59856pt.
- [5 <./Images/Diagrammes/diagram_usecase_ex_atm.png>]) (./Pages/Section1/Activi
-te/activite.tex
-<./Images/Diagrammes/diagram_activite_elements_activite.png, id=218, 224.84pt x
+ [7.7 <./Images/Diagrammes/diagram_usecase_ex_atm.png>]) (./Pages/Section1/Acti
+vite/activite.tex
+<./Images/Diagrammes/diagram_activite_elements_activite.png, id=272, 224.84pt x
  99.37125pt>
 File: ./Images/Diagrammes/diagram_activite_elements_activite.png Graphic file (
 type png)
@@ -1573,7 +1642,7 @@ type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_activite
 .png  used on input line 18.
 (pdftex.def)             Requested size: 89.9344pt x 39.74779pt.
-<./Images/Diagrammes/diagram_activite_elements_activite_initial.png, id=219, 63
+<./Images/Diagrammes/diagram_activite_elements_activite_initial.png, id=273, 63
 .23625pt x 58.2175pt>
 File: ./Images/Diagrammes/diagram_activite_elements_activite_initial.png Graphi
 c file (type png)
@@ -1581,7 +1650,7 @@ c file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_activite
 _initial.png  used on input line 24.
 (pdftex.def)             Requested size: 12.64702pt x 11.64328pt.
-<./Images/Diagrammes/diagram_activite_elements_finflux.png, id=220, 136.51pt x 
+<./Images/Diagrammes/diagram_activite_elements_finflux.png, id=274, 136.51pt x 
 50.1875pt>
 File: ./Images/Diagrammes/diagram_activite_elements_finflux.png Graphic file (t
 ype png)
@@ -1589,7 +1658,7 @@ ype png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_finflux.
 png  used on input line 30.
 (pdftex.def)             Requested size: 27.30151pt x 10.03731pt.
-<./Images/Diagrammes/diagram_activite_elements_activite_final.png, id=221, 63.2
+<./Images/Diagrammes/diagram_activite_elements_activite_final.png, id=275, 63.2
 3625pt x 58.2175pt>
 File: ./Images/Diagrammes/diagram_activite_elements_activite_final.png Graphic 
 file (type png)
@@ -1597,7 +1666,7 @@ file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_activite
 _final.png  used on input line 36.
 (pdftex.def)             Requested size: 12.64702pt x 11.64328pt.
-<./Images/Diagrammes/diagram_activite_elements_fluxcommande.png, id=222, 224.84
+<./Images/Diagrammes/diagram_activite_elements_fluxcommande.png, id=276, 224.84
 pt x 99.37125pt>
 File: ./Images/Diagrammes/diagram_activite_elements_fluxcommande.png Graphic fi
 le (type png)
@@ -1605,7 +1674,7 @@ le (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_fluxcomm
 ande.png  used on input line 42.
 (pdftex.def)             Requested size: 96.73788pt x 42.75458pt.
-<./Images/Diagrammes/diagram_activite_elements_pointjonction.png, id=223, 704.6
+<./Images/Diagrammes/diagram_activite_elements_pointjonction.png, id=277, 704.6
 325pt x 170.6375pt>
 File: ./Images/Diagrammes/diagram_activite_elements_pointjonction.png Graphic f
 ile (type png)
@@ -1613,7 +1682,7 @@ ile (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_pointjon
 ction.png  used on input line 47.
 (pdftex.def)             Requested size: 241.84843pt x 58.56535pt.
-<./Images/Diagrammes/diagram_activite_elements_barresynchro.png, id=224, 623.32
+<./Images/Diagrammes/diagram_activite_elements_barresynchro.png, id=278, 623.32
 875pt x 232.87pt>
 File: ./Images/Diagrammes/diagram_activite_elements_barresynchro.png Graphic fi
 le (type png)
@@ -1621,7 +1690,7 @@ le (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_barresyn
 chro.png  used on input line 52.
 (pdftex.def)             Requested size: 241.84843pt x 90.35344pt.
-<./Images/Diagrammes/diagram_activite_elements_signaux.png, id=225, 741.77126pt
+<./Images/Diagrammes/diagram_activite_elements_signaux.png, id=279, 741.77126pt
  x 241.90375pt>
 File: ./Images/Diagrammes/diagram_activite_elements_signaux.png Graphic file (t
 ype png)
@@ -1629,14 +1698,14 @@ ype png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_signaux.
 png  used on input line 57.
 (pdftex.def)             Requested size: 241.84843pt x 78.86877pt.
-<./Images/Diagrammes/diagram_activite_resume.png, id=226, 1084.05pt x 370.38374
+<./Images/Diagrammes/diagram_activite_resume.png, id=280, 1084.05pt x 370.38374
 pt>
 File: ./Images/Diagrammes/diagram_activite_resume.png Graphic file (type png)
 <use ./Images/Diagrammes/diagram_activite_resume.png>
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_resume.png  used 
 on input line 66.
 (pdftex.def)             Requested size: 483.69687pt x 165.26389pt.
-<./Images/Diagrammes/diagram_activite_ex_complet.png, id=227, 963.6pt x 997.727
+<./Images/Diagrammes/diagram_activite_ex_complet.png, id=281, 963.6pt x 997.727
 5pt>
 File: ./Images/Diagrammes/diagram_activite_ex_complet.png Graphic file (type pn
 g)
@@ -1644,16 +1713,17 @@ g)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_ex_complet.png  u
 sed on input line 72.
 (pdftex.def)             Requested size: 483.69687pt x 500.82643pt.
- [6 <./Images/Diagrammes/diagram_activite_elements_activite.png> <./Images/Diag
-rammes/diagram_activite_elements_activite_initial.png> <./Images/Diagrammes/dia
-gram_activite_elements_finflux.png> <./Images/Diagrammes/diagram_activite_eleme
-nts_activite_final.png> <./Images/Diagrammes/diagram_activite_elements_fluxcomm
-ande.png> <./Images/Diagrammes/diagram_activite_elements_pointjonction.png> <./
-Images/Diagrammes/diagram_activite_elements_barresynchro.png> <./Images/Diagram
-mes/diagram_activite_elements_signaux.png> <./Images/Diagrammes/diagram_activit
-e_resume.png>] [7 <./Images/Diagrammes/diagram_activite_ex_complet.png>])
+
+[8.8 <./Images/Diagrammes/diagram_activite_elements_activite.png> <./Images/Dia
+grammes/diagram_activite_elements_activite_initial.png> <./Images/Diagrammes/di
+agram_activite_elements_finflux.png> <./Images/Diagrammes/diagram_activite_elem
+ents_activite_final.png> <./Images/Diagrammes/diagram_activite_elements_fluxcom
+mande.png> <./Images/Diagrammes/diagram_activite_elements_pointjonction.png> <.
+/Images/Diagrammes/diagram_activite_elements_barresynchro.png> <./Images/Diagra
+mmes/diagram_activite_elements_signaux.png> <./Images/Diagrammes/diagram_activi
+te_resume.png>] [9.9 <./Images/Diagrammes/diagram_activite_ex_complet.png>])
 (./Pages/Section1/Interaction/interaction.tex
-<./Images/Diagrammes/diagram_interaction_ex_atm_usecase.png, id=251, 820.06375p
+<./Images/Diagrammes/diagram_interaction_ex_atm_usecase.png, id=306, 820.06375p
 t x 617.30624pt>
 File: ./Images/Diagrammes/diagram_interaction_ex_atm_usecase.png Graphic file (
 type png)
@@ -1661,7 +1731,7 @@ type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_interaction_ex_atm_usecase
 .png  used on input line 9.
 (pdftex.def)             Requested size: 217.66211pt x 163.83969pt.
-<./Images/Diagrammes/diagram_interaction_ex_atm.png, id=252, 710.655pt x 624.33
+<./Images/Diagrammes/diagram_interaction_ex_atm.png, id=307, 710.655pt x 624.33
 25pt>
 File: ./Images/Diagrammes/diagram_interaction_ex_atm.png Graphic file (type png
 )
@@ -1669,8 +1739,9 @@ File: ./Images/Diagrammes/diagram_interaction_ex_atm.png Graphic file (type png
 Package pdftex.def Info: ./Images/Diagrammes/diagram_interaction_ex_atm.png  us
 ed on input line 13.
 (pdftex.def)             Requested size: 217.66211pt x 191.22612pt.
-) [8 <./Images/Diagrammes/diagram_interaction_ex_atm_usecase.png> <./Images/Dia
-grammes/diagram_interaction_ex_atm.png>] (./Pages/Section1/Classe/classe.tex
+) [10.10 <./Images/Diagrammes/diagram_interaction_ex_atm_usecase.png> <./Images
+/Diagrammes/diagram_interaction_ex_atm.png>] (./Pages/Section1/Classe/classe.te
+x
 Underfull \hbox (badness 10000) in paragraph at lines 95--96
 []|\T1/cmr/m/n/10 scaleFigure(percent
  []
@@ -1692,9 +1763,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--135
 )
 Underfull \vbox (badness 7595) has occurred while \output is active []
 
- [9]
-[10] (./Pages/Section1/Sequence/sequence.tex
-<./Images/Diagrammes/diagram_sequence_elements.png, id=277, 1023.825pt x 673.51
+ [11.11]
+[12.12] (./Pages/Section1/Sequence/sequence.tex
+<./Images/Diagrammes/diagram_sequence_elements.png, id=336, 1023.825pt x 673.51
 625pt>
 File: ./Images/Diagrammes/diagram_sequence_elements.png Graphic file (type png)
 
@@ -1702,12 +1773,12 @@ File: ./Images/Diagrammes/diagram_sequence_elements.png Graphic file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_elements.png  use
 d on input line 24.
 (pdftex.def)             Requested size: 483.69687pt x 318.197pt.
- [11 <./Images/Diagrammes/diagram_sequence_elements.png>]
+ [13.13 <./Images/Diagrammes/diagram_sequence_elements.png>]
 Underfull \hbox (badness 2368) in paragraph at lines 77--77
 []|\T1/cmr/m/n/10 Référence à un autre di-a-gramme de
  []
 
-<./Images/Diagrammes/diagram_sequence_fragmentscombines1.png, id=287, 1035.87pt
+<./Images/Diagrammes/diagram_sequence_fragmentscombines1.png, id=347, 1035.87pt
  x 603.25375pt>
 File: ./Images/Diagrammes/diagram_sequence_fragmentscombines1.png Graphic file 
 (type png)
@@ -1715,7 +1786,7 @@ File: ./Images/Diagrammes/diagram_sequence_fragmentscombines1.png Graphic file
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_fragmentscombines
 1.png  used on input line 92.
 (pdftex.def)             Requested size: 266.03474pt x 154.92766pt.
-<./Images/Diagrammes/diagram_sequence_fragmentscombines.png, id=288, 736.7525pt
+<./Images/Diagrammes/diagram_sequence_fragmentscombines.png, id=348, 736.7525pt
  x 522.95375pt>
 File: ./Images/Diagrammes/diagram_sequence_fragmentscombines.png Graphic file (
 type png)
@@ -1723,7 +1794,7 @@ type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_fragmentscombines
 .png  used on input line 97.
 (pdftex.def)             Requested size: 193.47578pt x 137.32927pt.
-<./Images/Diagrammes/diagram_sequence_ex_fragmentscombines.png, id=289, 1035.87
+<./Images/Diagrammes/diagram_sequence_ex_fragmentscombines.png, id=349, 1035.87
 pt x 686.565pt>
 File: ./Images/Diagrammes/diagram_sequence_ex_fragmentscombines.png Graphic fil
 e (type png)
@@ -1731,7 +1802,7 @@ e (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_ex_fragmentscombi
 nes.png  used on input line 107.
 (pdftex.def)             Requested size: 217.66211pt x 144.25623pt.
-<./Images/Diagrammes/diagram_sequence_fc_critical.png, id=290, 920.43875pt x 62
+<./Images/Diagrammes/diagram_sequence_fc_critical.png, id=350, 920.43875pt x 62
 6.34pt>
 File: ./Images/Diagrammes/diagram_sequence_fc_critical.png Graphic file (type p
 ng)
@@ -1739,14 +1810,14 @@ ng)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_fc_critical.png  
 used on input line 112.
 (pdftex.def)             Requested size: 217.66211pt x 148.11696pt.
-<./Images/Diagrammes/diagram_sequence_fc_par.png, id=291, 790.955pt x 595.22375
+<./Images/Diagrammes/diagram_sequence_fc_par.png, id=351, 790.955pt x 595.22375
 pt>
 File: ./Images/Diagrammes/diagram_sequence_fc_par.png Graphic file (type png)
 <use ./Images/Diagrammes/diagram_sequence_fc_par.png>
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_fc_par.png  used 
 on input line 117.
 (pdftex.def)             Requested size: 217.66211pt x 163.80057pt.
-<./Images/Diagrammes/diagram_sequence_fc_break.png, id=292, 812.03375pt x 734.7
+<./Images/Diagrammes/diagram_sequence_fc_break.png, id=352, 812.03375pt x 734.7
 45pt>
 File: ./Images/Diagrammes/diagram_sequence_fc_break.png Graphic file (type png)
 
@@ -1754,13 +1825,13 @@ File: ./Images/Diagrammes/diagram_sequence_fc_break.png Graphic file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_sequence_fc_break.png  use
 d on input line 122.
 (pdftex.def)             Requested size: 217.66211pt x 196.93753pt.
-[12 <./Images/Diagrammes/diagram_sequence_fragmentscombines1.png> <./Images/Dia
-grammes/diagram_sequence_fragmentscombines.png>]) [13 <./Images/Diagrammes/diag
-ram_sequence_ex_fragmentscombines.png> <./Images/Diagrammes/diagram_sequence_fc
-_critical.png> <./Images/Diagrammes/diagram_sequence_fc_par.png> <./Images/Diag
-rammes/diagram_sequence_fc_break.png>]
+[14.14 <./Images/Diagrammes/diagram_sequence_fragmentscombines1.png> <./Images/
+Diagrammes/diagram_sequence_fragmentscombines.png>]) [15.15 <./Images/Diagramme
+s/diagram_sequence_ex_fragmentscombines.png> <./Images/Diagrammes/diagram_seque
+nce_fc_critical.png> <./Images/Diagrammes/diagram_sequence_fc_par.png> <./Image
+s/Diagrammes/diagram_sequence_fc_break.png>]
 (./Pages/Section1/StateChart/statechart.tex
-<./Images/Diagrammes/diagram_statechart_package.png, id=316, 364.36125pt x 120.
+<./Images/Diagrammes/diagram_statechart_package.png, id=377, 364.36125pt x 120.
 45pt>
 File: ./Images/Diagrammes/diagram_statechart_package.png Graphic file (type png
 )
@@ -1791,7 +1862,7 @@ file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_activite_elements_activite
 _final.png  used on input line 48.
 (pdftex.def)             Requested size: 12.64702pt x 11.64328pt.
-<./Images/Diagrammes/diagram_statechart_transition.png, id=317, 544.0325pt x 84
+<./Images/Diagrammes/diagram_statechart_transition.png, id=378, 544.0325pt x 84
 .315pt>
 File: ./Images/Diagrammes/diagram_statechart_transition.png Graphic file (type 
 png)
@@ -1799,7 +1870,7 @@ png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_transition.png 
  used on input line 53.
 (pdftex.def)             Requested size: 241.84843pt x 37.48209pt.
-<./Images/Diagrammes/diagram_statechart_actiontransition.png, id=318, 967.615pt
+<./Images/Diagrammes/diagram_statechart_actiontransition.png, id=379, 967.615pt
  x 220.825pt>
 File: ./Images/Diagrammes/diagram_statechart_actiontransition.png Graphic file 
 (type png)
@@ -1807,7 +1878,7 @@ File: ./Images/Diagrammes/diagram_statechart_actiontransition.png Graphic file
 Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_actiontransitio
 n.png  used on input line 59.
 (pdftex.def)             Requested size: 241.84843pt x 55.19263pt.
-<./Images/Diagrammes/diagram_statechart_activity_def.png, id=319, 499.8675pt x 
+<./Images/Diagrammes/diagram_statechart_activity_def.png, id=380, 499.8675pt x 
 96.36pt>
 File: ./Images/Diagrammes/diagram_statechart_activity_def.png Graphic file (typ
 e png)
@@ -1815,7 +1886,7 @@ e png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_activity_def.pn
 g  used on input line 64.
 (pdftex.def)             Requested size: 241.84843pt x 46.6213pt.
-<./Images/Diagrammes/diagram_statechart_etat_all.png, id=320, 1034.86626pt x 35
+<./Images/Diagrammes/diagram_statechart_etat_all.png, id=381, 1034.86626pt x 35
 3.32pt>
 File: ./Images/Diagrammes/diagram_statechart_etat_all.png Graphic file (type pn
 g)
@@ -1828,11 +1899,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--89
 []|\T1/cmr/bx/n/10 Rapport
  []
 
-[14 <./Images/Diagrammes/diagram_statechart_package.png> <./Images/Diagrammes/d
-iagram_statechart_transition.png> <./Images/Diagrammes/diagram_statechart_actio
-ntransition.png> <./Images/Diagrammes/diagram_statechart_activity_def.png> <./I
-mages/Diagrammes/diagram_statechart_etat_all.png>]
-<./Images/Diagrammes/diagram_statechart_pointjonctionstatique.png, id=337, 1049
+[16.16 <./Images/Diagrammes/diagram_statechart_package.png> <./Images/Diagramme
+s/diagram_statechart_transition.png> <./Images/Diagrammes/diagram_statechart_ac
+tiontransition.png> <./Images/Diagrammes/diagram_statechart_activity_def.png> <
+./Images/Diagrammes/diagram_statechart_etat_all.png>]
+<./Images/Diagrammes/diagram_statechart_pointjonctionstatique.png, id=399, 1049
 .9225pt x 314.17375pt>
 File: ./Images/Diagrammes/diagram_statechart_pointjonctionstatique.png Graphic 
 file (type png)
@@ -1840,7 +1911,7 @@ file (type png)
 Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_pointjonctionst
 atique.png  used on input line 111.
 (pdftex.def)             Requested size: 266.03474pt x 79.60748pt.
-<./Images/Diagrammes/diagram_statechart_pointjonctiondynamique.png, id=338, 708
+<./Images/Diagrammes/diagram_statechart_pointjonctiondynamique.png, id=400, 708
 .6475pt x 345.29pt>
 File: ./Images/Diagrammes/diagram_statechart_pointjonctiondynamique.png Graphic
  file (type png)
@@ -1849,7 +1920,7 @@ Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_pointjonctiondy
 namique.png  used on input line 116.
 (pdftex.def)             Requested size: 193.47578pt x 94.26747pt.
 <./Images/Diagrammes/diagram_statechart_ex_stopwatch_sansetatscomposites.png, i
-d=339, 949.5475pt x 367.3725pt>
+d=401, 949.5475pt x 367.3725pt>
 File: ./Images/Diagrammes/diagram_statechart_ex_stopwatch_sansetatscomposites.p
 ng Graphic file (type png)
 <use ./Images/Diagrammes/diagram_statechart_ex_stopwatch_sansetatscomposites.pn
@@ -1858,7 +1929,7 @@ Package pdftex.def Info: ./Images/Diagrammes/diagram_statechart_ex_stopwatch_sa
 nsetatscomposites.png  used on input line 127.
 (pdftex.def)             Requested size: 241.84843pt x 93.56943pt.
 <./Images/Diagrammes/diagram_statechart_ex_stopwatch_avecetatscomposites.png, i
-d=340, 970.62625pt x 410.53375pt>
+d=402, 970.62625pt x 410.53375pt>
 File: ./Images/Diagrammes/diagram_statechart_ex_stopwatch_avecetatscomposites.p
 ng Graphic file (type png)
 <use ./Images/Diagrammes/diagram_statechart_ex_stopwatch_avecetatscomposites.pn
@@ -1871,16 +1942,52 @@ Overfull \hbox (2.22168pt too wide) in paragraph at lines 126--134
 [][] [] 
  []
 
-)) [15 <./Images/Diagrammes/diagram_statechart_pointjonctionstatique.png> <./Im
-ages/Diagrammes/diagram_statechart_pointjonctiondynamique.png> <./Images/Diagra
-mmes/diagram_statechart_ex_stopwatch_sansetatscomposites.png> <./Images/Diagram
-mes/diagram_statechart_ex_stopwatch_avecetatscomposites.png>]
+)) [17.17 <./Images/Diagrammes/diagram_statechart_pointjonctionstatique.png> <.
+/Images/Diagrammes/diagram_statechart_pointjonctiondynamique.png> <./Images/Dia
+grammes/diagram_statechart_ex_stopwatch_sansetatscomposites.png> <./Images/Diag
+rammes/diagram_statechart_ex_stopwatch_avecetatscomposites.png>]
 \openout2 = `./Pages/Section2/section2.aux'.
 
 
-(./Pages/Section2/section2.tex
+(./Pages/Section2/section2.tex [18.18
+
+
+
+
+]
 Chapitre 2.
-(./Pages/Section2/DesignPatterns/designpatterns.tex
+(./Pages/Section2/Gradle/gradle.tex
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)) [19.19
+
+]
+(./Pages/Section2/Tests/testsunitaires.tex
+Underfull \hbox (badness 1895) in paragraph at lines 73--73
+\T1/cmr/m/n/10 'ex-pected' et 'ac-tual'
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]|\T1/cmr/m/n/10 Vérifie que les
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/cmr/m/n/10 références 'ex-pected'
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/cmr/m/n/10 et 'ac-tual' pointent
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 79--79
+\T1/cmr/m/n/10 de 'ex-e-cutable' lance
+ []
+
+[20.20]) [21.21] (./Pages/Section2/DesignPatterns/designpatterns.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--12
 []|\T1/cmr/bx/n/10 Design pat-
  []
@@ -1890,126 +1997,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--15
 []|\T1/cmr/m/n/10 Fabrique ab-
  []
 
-) [16
-
-
-
-
-] (./Pages/Section2/Composite/composite.tex
-(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Overfull \hbox (35.11777pt too wide) in paragraph at lines 21--185
+) [22.22] (./Pages/Section2/Composite/composite.tex
+Overfull \hbox (35.11777pt too wide) in paragraph at lines 27--165
 []|  $[]$   $[]$| 
  []
 
-) [17] (./Pages/Section2/Visitor/visitor.tex
-Overfull \hbox (35.11777pt too wide) in paragraph at lines 24--234
+) [23.23] (./Pages/Section2/Visitor/visitor.tex
+Overfull \hbox (35.11777pt too wide) in paragraph at lines 30--166
 []|  $[]$   $[]$| 
  []
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+) [24.24] (./Pages/Section2/Observer/observer.tex
+Underfull \hbox (badness 1178) in paragraph at lines 102--103
+\T1/cmr/m/n/10 sage est reçu dans une ap-pli-ca-tion de mes-sagerie.
+ []
 
- [18]
-Overfull \vbox (72.3303pt too high) has occurred while \output is active []
 
-
-[19] (./Pages/Section2/Observer/observer.tex
-Overfull \hbox (35.11777pt too wide) in paragraph at lines 19--185
+Overfull \hbox (35.11777pt too wide) in paragraph at lines 28--186
 []|  $[]$   $[]$| 
  []
 
-) [20] (./Pages/Section2/Singleton/singleton.tex
-Overfull \hbox (35.11777pt too wide) in paragraph at lines 19--101
+) [25.25] (./Pages/Section2/Singleton/singleton.tex
+Overfull \hbox (35.11777pt too wide) in paragraph at lines 24--104
 []|  $[]$   $[]$| 
  []
 
-) [21] (./Pages/Section2/Decorator/decorator.tex
-Overfull \hbox (35.11777pt too wide) in paragraph at lines 19--152
+) [26.26] (./Pages/Section2/Decorator/decorator.tex
+Overfull \hbox (35.11777pt too wide) in paragraph at lines 27--156
 []|  $[]$   $[]$| 
  []
 
-) [22] (./Pages/Section2/Java/java.tex [23])) [24]
+) [27.27] (./Pages/Section2/Java/java.tex [28.28])) [29.29]
 \openout2 = `./Pages/Section4/section4.aux'.
 
 
-(./Pages/Section4/section4.tex
-Chapitre 3.
-[25
+(./Pages/Section4/section4.tex [30.30
 
 
 
 
 ]
+Chapitre 3.
+[31.31
+
+]
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/Q
-uestion1_DiagramUseCase.jpg, id=1019, 804.00375pt x 792.9625pt>
+uestion1_DiagramUseCase.jpg, id=1115, 804.00375pt x 792.9625pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question1_DiagramUseCase.jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Question1_DiagramUseCase.jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Question1_DiagramUseCase.jpg  used on input line 14.
+dLog/Examen2022/Images/Question1_DiagramUseCase.jpg  used on input line 15.
 (pdftex.def)             Requested size: 483.69687pt x 477.05162pt.
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/Q
-uestion2_DiagramActivite.jpg, id=1020, 1073.00874pt x 1247.66125pt>
+uestion2_DiagramActivite.jpg, id=1116, 1073.00874pt x 1247.66125pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question2_DiagramActivite.jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Question2_DiagramActivite.jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Question2_DiagramActivite.jpg  used on input line 20.
+dLog/Examen2022/Images/Question2_DiagramActivite.jpg  used on input line 21.
 (pdftex.def)             Requested size: 483.69687pt x 562.4133pt.
- [26 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
-ges/Question1_DiagramUseCase.jpg>]
+ [32.32 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/
+Images/Question1_DiagramUseCase.jpg>]
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/Q
-uestion3_StateChart.jpg, id=1030, 631.35875pt x 449.68pt>
+uestion3_StateChart.jpg, id=1127, 631.35875pt x 449.68pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question3_StateChart.jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Question3_StateChart.jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Question3_StateChart.jpg  used on input line 26.
+dLog/Examen2022/Images/Question3_StateChart.jpg  used on input line 27.
 (pdftex.def)             Requested size: 483.69687pt x 344.51183pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
-ges/Question2_DiagramActivite.jpg>]
+ [33.33 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/
+Images/Question2_DiagramActivite.jpg>]
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/Q
-uestion4_DiagramClass.jpg, id=1037, 775.89874pt x 615.29875pt>
+uestion4_DiagramClass.jpg, id=1135, 775.89874pt x 615.29875pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Question4_DiagramClass.jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Question4_DiagramClass.jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Question4_DiagramClass.jpg  used on input line 32.
+dLog/Examen2022/Images/Question4_DiagramClass.jpg  used on input line 33.
 (pdftex.def)             Requested size: 483.69687pt x 383.58435pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
-ges/Question3_StateChart.jpg>]
+ [34.34 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/
+Images/Question3_StateChart.jpg>]
 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Images/S
-equence Diagram .jpg, id=1044, 755.82375pt x 777.90625pt>
+equence Diagram .jpg, id=1143, 755.82375pt x 777.90625pt>
 File: /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
 ges/Sequence Diagram .jpg Graphic file (type jpg)
 <use /Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Imag
 es/Sequence Diagram .jpg>
 Package pdftex.def Info: /Users/baptistegrosjean/Documents/VPProjects/ExamensMo
-dLog/Examen2022/Images/Sequence Diagram .jpg  used on input line 38.
+dLog/Examen2022/Images/Sequence Diagram .jpg  used on input line 39.
 (pdftex.def)             Requested size: 483.69687pt x 497.83456pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/Ima
-ges/Question4_DiagramClass.jpg>] [30 </Users/baptistegrosjean/Documents/VPProje
-cts/ExamensModLog/Examen2022/Images/Sequence Diagram .jpg>] [31] [32]) [33]
-(./umonsmodlog.lof)
+ [35.35 </Users/baptistegrosjean/Documents/VPProjects/ExamensModLog/Examen2022/
+Images/Question4_DiagramClass.jpg>] [36.36 </Users/baptistegrosjean/Documents/V
+PProjects/ExamensModLog/Examen2022/Images/Sequence Diagram .jpg>] [37.37] [38.3
+8])
+[39.39] (./umonsmodlog.lof)
 \tf@lof=\write7
 \openout7 = `umonsmodlog.lof'.
 
- [34
+ [40.40
 
 
 
@@ -2017,25 +2117,32 @@ cts/ExamensModLog/Examen2022/Images/Sequence Diagram .jpg>] [31] [32]) [33]
 \tf@lot=\write8
 \openout8 = `umonsmodlog.lot'.
 
- [35
 
-] (./umonsmodlog.aux
-(./Pages/Couverture/titlepage.aux) (./Pages/Section1/section1.aux)
-(./Pages/Section2/section2.aux) (./Pages/Section4/section4.aux))
+(/usr/local/texlive/2022/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/stringenc/se-utf8.def
+File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
+) [41.41
+
+]
+(./umonsmodlog.aux (./Pages/Couverture/titlepage.aux)
+(./Pages/Section1/section1.aux) (./Pages/Section2/section2.aux)
+(./Pages/Section4/section4.aux))
 Package rerunfilecheck Info: File `umonsmodlog.out' has not changed.
-(rerunfilecheck)             Checksum: 8CDF204FC913CF3CA3A5606CAE44F188;3886.
+(rerunfilecheck)             Checksum: 989D0CDB18E3A705D3061B752DC73416;5044.
 Package logreq Info: Writing requests to 'umonsmodlog.run.xml'.
 \openout1 = `umonsmodlog.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44171 strings out of 476093
- 890558 string characters out of 5791584
- 3583793 words of memory out of 5000000
- 62926 multiletter control sequences out of 15000+600000
+ 45675 strings out of 476093
+ 919232 string characters out of 5791584
+ 3557793 words of memory out of 5000000
+ 64345 multiletter control sequences out of 15000+600000
  529756 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,19n,105p,784b,2667s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,19n,105p,848b,2522s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<
 /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -2059,10 +2166,10 @@ t/fonts/type1/public/cm-super/sfti0500.pfb></usr/local/texlive/2022/texmf-dist/
 fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2022/texmf-dist/fo
 nts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2022/texmf-dist/font
 s/type1/public/cm-super/sftt1000.pfb>
-Output written on umonsmodlog.pdf (35 pages, 4528593 bytes).
+Output written on umonsmodlog.pdf (41 pages, 4569932 bytes).
 PDF statistics:
- 1511 PDF objects out of 1728 (max. 8388607)
- 1348 compressed objects within 14 object streams
- 860 named destinations out of 1000 (max. 500000)
- 417 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1622 PDF objects out of 1728 (max. 8388607)
+ 1450 compressed objects within 15 object streams
+ 878 named destinations out of 1000 (max. 500000)
+ 482 words of extra memory for PDF output out of 10000 (max. 10000000)
 

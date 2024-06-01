@@ -1,0 +1,150 @@
+\subsection{Tests logiciels}
+
+\subsubsection{G\'en\'eralit\'es}
+\paragraph{Techniques de tests}
+
+\begin{table}[H]
+	\begin{adjustbox}{max width=\textwidth}
+		\begin{tabular}{l|l}
+			
+		\end{tabular}
+	\end{adjustbox}
+\end{table}
+\paragraph{Phases de tests}
+
+\begin{table}[H]
+	\begin{adjustbox}{max width=\textwidth}
+		\begin{tabular}{l|p{40em}}
+			\toprule
+			\textbf{Type de test} & \textbf{Description} \\
+			\midrule
+			Tests unitaires & Testez le bon fonctionnement de chaque unité du logiciel (package, classe, méthode, etc.) \\
+			Tests du système & Testez que le système entier satisfait toutes les exigences fonctionnelles et non fonctionnelles, et testez les cas d'utilisation et les interactions entre les unités \\
+			Tests d'intégration & Testez le bon fonctionnement du système dans son environnement de déploiement \\
+			Tests de réception & Test du logiciel ou d'un ensemble matériel-logiciel après installation, effectué par le client dans ses locaux avec la participation du développeur pour vérifier que les dispositions contractuelles ont été respectées. \\
+			Tests de régression & Testez les défauts introduits après chaque changement apporté dans les programmes d'un système.\\
+			\bottomrule
+		\end{tabular}
+	\end{adjustbox}
+\end{table}
+
+
+
+
+
+\paragraph{Black Box VS White Box}
+
+\begin{table}[H]
+	\begin{adjustbox}{max width=\textwidth}
+		\begin{tabular}{c|c|c}
+			\toprule
+			\textbf{Caractéristique} & \textbf{Test fonctionnel / en boîte noire (Black box)} & \textbf{Test structurel / en boîte blanche (White box)} \\
+			\midrule
+			Nature & Ne connaît pas le code source & Connaît le code source \\
+			Objectif & Vérifier le comportement du système & Vérifier la qualité du code \\
+			Approche & Basée sur les entrées et les sorties & Basée sur la structure interne \\
+			Type & Fonctionnel & Structurel \\
+			Exemples & Test de fonctionnalité, Test de performance, Test de compatibilité & Test unitaire, Test de composant, Test de code\\
+			Couverture & Couvre les entrées et les sorties du système & Couvre le code source  \\
+			Automatisation & Peut être automatisé & Peut être automatisé \\
+			Complémentarité & Complémentaire aux tests en boîte blanche & Complémentaire aux tests en boîte noire \\
+			Coût & Peut être moins coûteux & Peut être plus coûteux \\
+			Temps & Peut être plus rapide & Peut être plus lent \\
+			\bottomrule
+			
+		\end{tabular}
+		
+	\end{adjustbox}
+\end{table}
+
+\subsubsection{Junit}
+JUnit Jupiter est l'implémentation de JUnit 5 pour les tests unitaires en Java. Il permet de créer des tests unitaires et des assertions pour vérifier que le comportement d'une méthode ou d'une classe est correct.
+
+Pour utiliser JUnit Jupiter, vous devez inclure les dépendances appropriées dans votre projet et annoter vos classes de test avec @Test.
+
+
+
+\begin{table}[H]
+	\begin{adjustbox}{max width=\textwidth}
+		\begin{tabular}{l|p{10em}|l}
+			\toprule
+			\textbf{Méthode de test} & \textbf{Description} & \textbf{Exemple} \\ \midrule
+			{@}Test & Indique que la méthode est un test unitaire. & {@}Test public void testAdd() {...} \\
+			assertEquals(expected, actual) & Vérifie que les valeurs 'expected' et 'actual' sont égales. & assertEquals(3, calculator.add(1, 2)); \\ 
+			assertTrue(condition) & Vérifie que la condition est vraie. & assertTrue(list.isEmpty()); \\ 
+			assertFalse(condition) & Vérifie que la condition est fausse. & assertFalse(list.contains("item")); \\
+			assertNotNull(object) & Vérifie que l'objet n'est pas nul. & assertNotNull(object); \\ 
+			assertNull(object) & Vérifie que l'objet est nul. & assertNull(object); \\ 
+			assertSame(expected, actual) & Vérifie que les références 'expected' et 'actual' pointent vers la même instance. & assertSame(object1, object2); \\ 
+			assertThrows(expectedType, executable) & Vérifie que l'exécution de 'executable' lance une exception de type 'expectedType'. & assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0)); \\
+			\bottomrule
+		\end{tabular}
+	\end{adjustbox}
+\end{table}
+
+Voici un exemple de code Java qui utilise toutes les méthodes de test principales de JUnit Jupiter :
+
+\begin{lstlisting}[style=monstyle]
+	import org.junit.jupiter.api.Test;
+	import static org.junit.jupiter.api.Assertions.*;
+	
+	public class MainTest {
+		private Main main = new Main();
+		private final String str1= "hello";
+		private final String str2= "world";
+		private final int num1 = 5;
+		private final int num2 = 10;
+		private final int num3 = 0;
+		
+		@Test
+		public void testAdd() {
+			int result = main.add(num1, num2);
+			assertEquals(15, result);
+		}
+		
+		@Test
+		public void testConcat() {
+			String result = main.concat(str1, str2);
+			assertEquals("hello world", result);
+		}
+		
+		@Test
+		public void testIsTrue() {
+			boolean result = main.isTrue();
+			assertTrue(result);
+		}
+		
+		@Test
+		public void testIsFalse() {
+			boolean result = main.isFalse();
+			assertFalse(result);
+		}
+		
+		@Test
+		public void testIsNotNull() {
+			Object result = main.getObject();
+			assertNotNull(result);
+		}
+		
+		@Test
+		public void testIsNull() {
+			Object result = main.getNullObject();
+			assertNull(result);
+		}
+		
+		@Test
+		public void testSame() {
+			Object result1 = main.getObject();
+			Object result2 = main.getObject();
+			assertSame(result1, result2);
+		}
+		
+		@Test
+		public void testDivideByZero() {
+			assertThrows(ArithmeticException.class, () -> main.divide(num1, num3));
+		}
+	}
+	
+	
+\end{lstlisting}
+La méthode testAdd est annotée avec @Test, ce qui signifie qu'elle est un test unitaire. La méthode assertEquals est utilisée pour vérifier que le résultat de la méthode add est égal à 15.

@@ -1,4 +1,7 @@
 \subsection{Decorator}
+%\begin{definition}[Decorator]
+%	Le design pattern decorator est un patron de conception.
+%\end{definition}
 \begin{table}[H]
 \caption{Design pattern Decorator}
 \label{tbl:design_pattern_decorator}
@@ -14,6 +17,11 @@
 \textbf{Avantages} & Permet d'ajouter de nouvelles fonctionnalités à un objet de manière flexible et sans altérer sa structure. Facilite la modification du comportement d'un objet à runtime.\\
 \cmidrule(lr){1-2}
 \textbf{Inconvénients} & Peut rendre le code plus complexe et difficile à comprendre, en particulier si de nombreux décorateurs sont utilisés.\\
+\cmidrule(lr){1-2}
+\multirow{4}{*}{\textbf{\'El\'ements}} & Component: interface d\'efinissant les \'el\'ements \`a d\'ecorer.  \\
+& Decorator:  \\
+& Concrete Component \\
+& Concrete Decorator \\
 \cmidrule(lr){1-2}
 \textbf{Exemples} & 
 \hspace{4mm}
@@ -143,12 +151,8 @@ System.out.println(photo.getDescription()); // Affiche "Couleur invers\'ee, Flou
 photo.modify(); // Applique tous les effets \`a l'image
 \end{lstlisting}
 \end{minipage}
-
 \end{minipage}
 \\
-%\cmidrule(lr){1-2}
-%\textbf{Structure} & 
-%\\
 \bottomrule
 \end{tabular}
 \end{adjustbox}

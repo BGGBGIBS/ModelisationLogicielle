@@ -1,4 +1,8 @@
 \subsection{Observer}\label{subsec:observer}
+%\begin{definition}[Observer]
+%	Le design pattern observer est un patron de conception qui.
+%\end{definition}
+
 \begin{table}[H]
 \caption{Design pattern Observer}
 \label{tbl:design_patterns_observer}
@@ -14,6 +18,11 @@
 \textbf{Avantages} & Permet de maintenir la synchronisation entre plusieurs objets sans avoir à connaître leurs implémentations. Facilite l'ajout ou la suppression d'Observer sans avoir à modifier l'Observable.\\
 \cmidrule(lr){1-2}
 \textbf{Inconvénients} & Nécessite la création de liens de dépendance entre les objets observés et les objets observateurs. Peut rendre le code plus complexe si utilisé de manière excessive.\\
+\cmidrule(lr){1-2}
+\multirow{4}{*}{\textbf{\'El\'ements}} & Subject: Aussi appel\'e \'emetteur, c'est l'interface impl\'ement\'e par les \'el\'ements \`a observer.\\
+& Observer: Interface qui d\'eclare l'interface de notifications via une m\'ethode update.\\
+& Concrete Subject: Impl\'ementation concr\`ete des \'el\'ements \`a observer qui \'emettent des notifications envers les observers. \\
+& Concrete Observer: effectue certaines actions en r\'eponses aux notifications des \'el\'ements \'ecout\'es.\\
 \cmidrule(lr){1-2}
 \textbf{Exemples} & 
 \hspace{4mm}
@@ -86,18 +95,18 @@ class Test {
 \end{minipage}
 %\\
 %\cmidrule(lr){2-2}
-%& 
+%
 \hspace{6mm}
 \begin{minipage}[tr]{0.5\textwidth}
 \begin{minipage}[t]{1\textwidth}
-Notification d'un utilisateur lorsqu'un nouveau message est re\{ç\}u dans une application de messagerie. L'application est configur\'ee pour observer les nouveaux messages et en informer l'utilisateur en envoyant une notification push.  
+Notification d'un utilisateur lorsqu'un nouveau message est re\c cu dans une application de messagerie. L'application est configur\'ee pour observer les nouveaux messages et en informer l'utilisateur en envoyant une notification push.  
 \end{minipage}
 \begin{minipage}[b]{1\textwidth}
 \begin{lstlisting}[style=monstyle]
 import java.util.ArrayList;
 import java.util.List;
 
-// Classe repr\'esentant un utilisateur de l'application de messagerie
+// Classe representant un utilisateur de l application de messagerie
 class User {
   private String name;
   private List<Message> messages;
@@ -107,33 +116,29 @@ class User {
     this.messages = new ArrayList<>();
   }
 
-  // M\'ethode appel\'ee lorsqu'un nouveau message est re\c cu
+  // Methode appelee lorsqu un nouveau message est recu
   public void receiveMessage(Message message) {
     messages.add(message);
-    // Envoi de la notification push \`a l\'utilisateur
+    // Envoi de la notification push a l'utilisateur
     sendPushNotification();
   }
 
-  // M\'ethode permettant d'envoyer une notification push \`a l'utilisateur
+  // Methode permettant d envoyer une notification push a l utilisateur
   public void sendPushNotification() {
-    System.out.println(\"Notification envoy\'ee \`a l\'utilisateur \" \+ name \+ \" : nouveau message re\c cu !\");
+    System.out.println( Notification envoyee a l utilisateur  + name +  : nouveau message recu ! );
   }
 }
 
-// Classe repr\'esentant un message dans l'application de messagerie
+// Classe representant un message dans l'application de messagerie
 class Message {
   private String content;
 
-  public Message(String content) {
-    this.content = content;
-  }
+  public Message(String content) {    this.content = content; }
 
-  public String getContent() {
-    return content;
-  }
+  public String getContent() {    return content; }
 }
 
-// Classe repr\'esentant l\'application de messagerie
+// Classe representant l'application de messagerie
 class MessagingApp {
   private List<User> users;
   private List<Message> messages;
@@ -143,12 +148,10 @@ class MessagingApp {
     this.messages = new ArrayList<>();
   }
 
-  // M\'ethode permettant d\'ajouter un utilisateur \`a l\'application
-  public void addUser(User user) {
-    users.add(user);
-  }
+  // Methode permettant d'ajouter un utilisateur a l'application
+  public void addUser(User user) {    users.add(user); }
 
-  // M\'ethode permettant d\'envoyer un message \`a tous les utilisateurs de l\'application
+  // Methode permettant d'envoyer un message a tous les utilisateurs de l'application
   public void sendMessage(Message message) {
     messages.add(message);
     // Notification de tous les utilisateurs de l'application
@@ -160,18 +163,18 @@ class MessagingApp {
 
 public class Main {
   public static void main(String[] args) {
-    // Cr\'eation de l'application de messagerie
+    // Creation de l'application de messagerie
     MessagingApp messagingApp = new MessagingApp();
 
-    // Cr\'eation de deux utilisateurs
+    // Creation de deux utilisateurs
     User user1 = new User("Alice");
     User user2 = new User("Bob");
 
-    // Ajout des utilisateurs \`a l\'application de messagerie
+    // Ajout des utilisateurs a l'application de messagerie
     messagingApp.addUser(user1);
     messagingApp.addUser(user2);
 
-    // Envoi d\'un message \`a tous les utilisateurs de l\'application
+    // Envoi d'un message a tous les utilisateurs de l'application
     messagingApp.sendMessage(new Message("Bonjour, comment vas-tu ?"));
   }
 }
@@ -180,8 +183,6 @@ public class Main {
 \end{minipage}
 \end{minipage}
 \\
-%\cmidrule(lr){1-2}
-%\textbf{Structure} & \\
 \bottomrule
 \end{tabular}
 \end{adjustbox}

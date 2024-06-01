@@ -1,6 +1,7 @@
 \subsection{Composite}\label{subsec:composite}
-\begin{definition}[Design Pattern Composite]
-\end{definition}
+%\begin{definition}[Design Pattern Composite]
+%	Le design pattern Composite est un patron de coneption qui.
+%\end{definition}
 \begin{table}[H]
 \caption{Design pattern Composite}
 \label{tbl:design_patterns_composite}
@@ -16,6 +17,11 @@
 \textbf{Avantages} & Permet de traiter les composants simples et les groupes de composants de manière uniforme. Rend le code plus lisible et facilite l'ajout de nouvelles fonctionnalités.\\
 \cmidrule(lr){1-2}
 \textbf{Inconvénients} & Nécessite la création d'une interface pour les composants de la hiérarchie. Peut rendre le code plus complexe et difficile à comprendre si utilisé de manière excessive.\\
+\cmidrule(lr){1-2}
+\multirow{4}{*}{\textbf{\'El\'ements}} & Component: Interface qui d\'efinit des op\'erations communes aux \'el\'ement simples et complexes de l'arbre composite. \\
+& Leaf: \'el\'ement de base de l'arbre n'ayant pas de sous \'el\'ement. Il dispose d'actions à ex\'ecuter. \\
+& Composite: \'el\'ement compos\'e de sous \'el\'ements - leaf ou composite - et n'ex\'ecute pas d'actions directement ais passent par ses enfants.  \\
+& Client: travaille sur tous les \'el\'ements au travers du component. \\
 \cmidrule(lr){1-2}
 \multirow{2}{*}{\textbf{Exemples}} & 
 \hspace{4mm}
@@ -154,34 +160,8 @@ DecisionTreeNode root = new CompositeDecisionTreeNode(Arrays.asList(
 
 boolean result = root.evaluate(); // false
 \end{lstlisting}
-%\end{minipage}
 \end{minipage}
-%\end{minipage}
 \\
-%\cmidrule(lr){1-2}
-%\textbf{Structure} &
-%%\begin{tikzpicture}[node distance = 6cm]
-%%\node(Composite) [classe]{
-%% \textbf{Composite}\\
-%% };
-%%\node(Leaf) [classe, right of=Composite] {
-%%\textbf{Leaf}\\
-%%};
-%%\node(SubComposite) [classe, below of=Leaf, yshift=4cm] {
-%%\textbf{Composite}\\
-%%};
-%%\node(SubLeaf) [classe, right of=Leaf] {
-%%\textbf{Leaf}\\
-%%};
-%%\node(SubSubComposite) [classe, below of=SubLeaf, yshift=4cm] {
-%%\textbf{Composite}\\
-%%};
-%%\draw[generalization] (Leaf.west) -- (Composite.east);
-%%\draw[generalization] (SubComposite.west) -- (Composite.east);
-%%\draw[generalization] (SubLeaf.west) -- (SubComposite.east);
-%%\draw[generalization] (SubSubComposite.west) -- (SubComposite.east);
-%%\end{tikzpicture} 
-%\\
 \bottomrule
 \end{tabular}
 \end{adjustbox}

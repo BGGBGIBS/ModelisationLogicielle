@@ -1,0 +1,23 @@
+# General LaTeX intermediates
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.bbl
+*.blg
+*.bcf
+*.xml
+*.synctex.gz
+*.run.xml
+
+# Ignore specific directories that might contain generated files
+*/.DS_Store
+
+# Ignore editor backups and system files
+*~
+._*
+
+# OS generated files
+.DS_Store

@@ -1,8 +1,8 @@
 \subsection{Visitor}\label{subsec:visitor}
-\begin{minipage}[t]{1\textwidth}
-\begin{definition}[Design Pattern Visitor]
-\end{definition}
-
+%\begin{minipage}[t]{1\textwidth}
+%\begin{definition}[Design Pattern Visitor]
+%	Le design pattern Visitor est un patron de coneption qui.
+%\end{definition}
 
 \begin{table}[H]
 \caption{Design pattern Visitor}
@@ -20,81 +20,50 @@
 \cmidrule(lr){1-2}
 \textbf{Inconvénients} & Nécessite la création d'une nouvelle classe pour chaque fonctionnalité à ajouter. Peut rendre le code plus complexe et difficile à comprendre si utilisé de manière excessive. \\
 \cmidrule(lr){1-2}
+\multirow{5}{*}{\textbf{\'El\'ements}} & Visitor: interface qui d\'eclare une s\'erie d'op\'erations  visiteuses qui prennent des \'el\'ements concrets faisait partie d'une structure en param\`etre. \\
+& Element: interface qui d\'eclare une m\'ethode qui accepte des visitors \\
+& Concrete Visitor: \'el\'ement conret impl\'ementant une interface Visitor et disposant de m\'ethodes ayant un comportement conret vis à vis d'une classe concr\`ete d\'etermin\'ee.\\
+& Concrete Element: \'el\'ement conret impl\'ementant une interface Element et acceptant des visitors concrets avec pour objectif qu'ils ex\'ecutent des comportments pr\'ecis sur leurs objects.\\
+& Object Struture: il s'agit du client, g\'en\'eralement une strcuture composite faisant appel aux visotors pour agir sur leurs strcutures.\\
+\cmidrule(lr){1-2}
 \multirow{2}{*}{\textbf{Exemples}} & 
 \hspace{4mm}
 \begin{minipage}[tl]{0.5\textwidth}
-%\begin{minipage}[t]{1\textwidth}
-Imaginons que vous avez une hiérarchie de classes représentant des formes géométriques (cercle, carré, triangle, etc.). Vous souhaitez ajouter la fonctionnalité de calcul de l'aire de chaque forme sans changer la structure de la hiérarchie de classes. Vous pouvez utiliser le design pattern Visitor pour créer une classe Visitor qui contient une méthode pour chaque type de forme. Lorsque la forme accepte le visiteur, elle appelle la méthode correspondante de ce visiteur pour calculer son aire.  
-%\end{minipage}
-%\begin{minipage}[b]{1\textwidth}
-\begin{lstlisting}[style=monstyle]
-public interface Shape {
-  void accept(Visitor visitor);
-}
 
+Imaginons que vous avez une hiérarchie de classes représentant des formes géométriques (cercle, carré, triangle, etc.). Vous souhaitez ajouter la fonctionnalité de calcul de l'aire de chaque forme sans changer la structure de la hiérarchie de classes. Vous pouvez utiliser le design pattern Visitor pour créer une classe Visitor qui contient une méthode pour chaque type de forme. Lorsque la forme accepte le visiteur, elle appelle la méthode correspondante de ce visiteur pour calculer son aire.  
+\begin{lstlisting}[style=monstyle]
+public interface Shape { void accept(Visitor visitor); }
 public class Circle implements Shape {
   private double radius;
-  
-  public Circle(double radius) {
-    this.radius = radius;
-  }
-  
-  public double getRadius() {
-    return radius;
-  }
-  
+  public Circle(double radius) {   this.radius = radius; }
+  public double getRadius() {  return radius; }
   @Override
-  public void accept(Visitor visitor) {
-    visitor.visit(this);
-  }
+  public void accept(Visitor visitor) { visitor.visit(this); }
 }
-
 public class Square implements Shape {
-  private double side;
-  
-  public Square(double side) {
-    this.side = side;
-  }
-  
-  public double getSide() {
-    return side;
-  }
-  
+  private double side; 
+  public Square(double side) {    this.side = side; }
+  public double getSide() {    return side; }
   @Override
-  public void accept(Visitor visitor) {
-    visitor.visit(this);
-  }
+  public void accept(Visitor visitor) {  visitor.visit(this);  }
 }
-
 public class Triangle implements Shape {
   private double base;
-  private double height;
-  
+  private double height; 
   public Triangle(double base, double height) {
     this.base = base;
     this.height = height;
   }
-  
-  public double getBase() {
-    return base;
-  }
-  
-  public double getHeight() {
-    return height;
-  }
-  
+  public double getBase() { return base; }
+  public double getHeight() { return height; }
   @Override
-  public void accept(Visitor visitor) {
-    visitor.visit(this);
-  }
+  public void accept(Visitor visitor) { visitor.visit(this); }
 }
-
 public interface Visitor {
   void visit(Circle circle);
   void visit(Square square);
   void visit(Triangle triangle);
 }
-
 public class AreaVisitor implements Visitor {
   @Override
   public void visit(Circle circle) {
@@ -102,14 +71,12 @@ public class AreaVisitor implements Visitor {
     double area = Math.PI * radius * radius;
     System.out.println("Area of circle: " + area);
   }
-  
   @Override
   public void visit(Square square) {
     double side = square.getSide();
     double area = side * side;
     System.out.println("Area of square: " + area);
   }
-  
   @Override
   public void visit(Triangle triangle) {
     double base = triangle.getBase();
@@ -118,11 +85,9 @@ public class AreaVisitor implements Visitor {
     System.out.println("Area of triangle: " + area);
   }
 }
-
 Circle circle = new Circle(5);
 Square square = new Square(10);
 Triangle triangle = new Triangle(5, 10);
-
 Visitor visitor = new AreaVisitor();
 circle.accept(visitor);
 square.accept(visitor);
@@ -145,56 +110,35 @@ abstract class Employee {
   // Attributs de l'employ\'e (nom, salaire, etc.)
   protected String name;
   protected double salary;
-
   // Constructeur prenant en param\`etre le nom et le salaire de l'employ\'e
   public Employee(String name, double salary) {
     this.name = name;
     this.salary = salary;
   }
-
   // M\'ethode abstraite acceptant un visiteur
   public abstract void accept(Visitor visitor);
 }
-
 // Classe repr\'esentant un directeur
 class Director extends Employee {
-  public Director(String name, double salary) {
-    super(name, salary);
-  }
-
+  public Director(String name, double salary) { super(name, salary);  }
   // Acceptation du visiteur
   @Override
-  public void accept(Visitor visitor) {
-    visitor.visit(this);
-  }
+  public void accept(Visitor visitor) { visitor.visit(this);  }
 }
-
 // Classe repr\'esentant un manager
 class Manager extends Employee {
-  public Manager(String name, double salary) {
-    super(name, salary);
-  }
-
+  public Manager(String name, double salary) { super(name, salary);  }
   // Acceptation du visiteur
   @Override
-  public void accept(Visitor visitor) {
-    visitor.visit(this);
-  }
+  public void accept(Visitor visitor) { visitor.visit(this);  }
 }
-
 // Classe repr\'esentant un employ\'e
 class Employee extends Employee {
-  public Employee(String name, double salary) {
-    super(name, salary);
-  }
-
+  public Employee(String name, double salary) { super(name, salary);  }
   // Acceptation du visiteur
   @Override
-  public void accept(Visitor visitor) {
-    visitor.visit(this);
-  }
+  public void accept(Visitor visitor) {  visitor.visit(this);  }
 }
-
 // Interface repr\'esentant un visiteur
 interface Visitor {
   // M\'ethode de visite pour chaque type d'employ\'e
@@ -202,42 +146,24 @@ interface Visitor {
   void visit(Manager manager);
   void visit(Employee employee);
 }
-
 // Classe repr\'esentant un visiteur calculant la r\'emun\'eration des employ\'es
 class SalaryCalculatorVisitor implements Visitor {
   // Attributs stockant la r\'emun\'eration totale pour chaque type d'employ\'e
   private double totalDirectorSalary;
   private double totalManagerSalary;
   private double totalEmployeeSalary;
-
   // M\'ethodes de visite pour chaque type d'employ\'e
   @Override
-  public void visit(Director director) {
-    totalDirectorSalary += director.salary;
-  }
-
+  public void visit(Director director) { totalDirectorSalary += director.salary;  }
   @Override
-  public void visit(Manager manager) {
-    totalManagerSalary += manager.salary;
-  }
-
+  public void visit(Manager manager) { totalManagerSalary += manager.salary;  }
   @Override
-  public void visit(Employee employee) {
-    totalEmployeeSalary += employee.salary;
-  }
+  public void visit(Employee employee) { totalEmployeeSalary += employee.salary;  }
 }
 \end{lstlisting}
-%\end{minipage}
 \end{minipage}
 \\
-%\cmidrule(lr){1-2}
-
-%\textbf{Structure} & 
-
-%\\
 \bottomrule
 \end{tabular}
 \end{adjustbox}
 \end{table}
-\end{minipage}
-

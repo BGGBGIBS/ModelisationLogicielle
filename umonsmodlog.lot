@@ -1,23 +1,23 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Langage UML\relax }}{3}{table.caption.2}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces Catégories et sous-catégories de diagrammes UML\relax }}{4}{table.caption.3}%
-\contentsline {table}{\numberline {1.3}{\ignorespaces \'El\'ements constitutifs d'un diagramme de cas d'utilisation\relax }}{5}{table.caption.4}%
-\contentsline {table}{\numberline {1.4}{\ignorespaces Constitution d'un diagramme d'activit\'e\relax }}{6}{table.caption.6}%
-\contentsline {table}{\numberline {1.5}{\ignorespaces Composants d'un diagramme de classe UML 2.5\relax }}{9}{table.caption.10}%
-\contentsline {table}{\numberline {1.6}{\ignorespaces Composants d'une classe en UML 2.5\relax }}{9}{table.caption.11}%
-\contentsline {table}{\numberline {1.7}{\ignorespaces Types d'attributs et de leur syntaxe en UML 2.5 :\relax }}{9}{table.caption.12}%
-\contentsline {table}{\numberline {1.8}{\ignorespaces Types d'opérations et leur syntaxe.\relax }}{9}{table.caption.13}%
-\contentsline {table}{\numberline {1.9}{\ignorespaces Types de cardinalités et leur syntaxe.\relax }}{9}{table.caption.14}%
-\contentsline {table}{\numberline {1.10}{\ignorespaces Types de classes et de leur syntaxe en UML 2.5 :\relax }}{10}{table.caption.15}%
-\contentsline {table}{\numberline {1.11}{\ignorespaces Opérateurs de boucle et de condition dans les diagrammes de séquence UML\relax }}{12}{table.caption.17}%
-\contentsline {table}{\numberline {1.12}{\ignorespaces Constitution d'un diagramme d'états comportementaux\relax }}{14}{table.caption.20}%
-\contentsline {table}{\numberline {1.13}{\ignorespaces Types d'actions/activités\relax }}{14}{table.caption.21}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Langage UML\relax }}{5}{table.caption.2}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Catégories et sous-catégories de diagrammes UML\relax }}{6}{table.caption.3}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces \'El\'ements constitutifs d'un diagramme de cas d'utilisation\relax }}{7}{table.caption.4}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces Constitution d'un diagramme d'activit\'e\relax }}{8}{table.caption.6}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces Composants d'un diagramme de classe UML 2.5\relax }}{11}{table.caption.10}%
+\contentsline {table}{\numberline {1.6}{\ignorespaces Composants d'une classe en UML 2.5\relax }}{11}{table.caption.11}%
+\contentsline {table}{\numberline {1.7}{\ignorespaces Types d'attributs et de leur syntaxe en UML 2.5 :\relax }}{11}{table.caption.12}%
+\contentsline {table}{\numberline {1.8}{\ignorespaces Types d'opérations et leur syntaxe.\relax }}{11}{table.caption.13}%
+\contentsline {table}{\numberline {1.9}{\ignorespaces Types de cardinalités et leur syntaxe.\relax }}{11}{table.caption.14}%
+\contentsline {table}{\numberline {1.10}{\ignorespaces Types de classes et de leur syntaxe en UML 2.5 :\relax }}{12}{table.caption.15}%
+\contentsline {table}{\numberline {1.11}{\ignorespaces Opérateurs de boucle et de condition dans les diagrammes de séquence UML\relax }}{14}{table.caption.17}%
+\contentsline {table}{\numberline {1.12}{\ignorespaces Constitution d'un diagramme d'états comportementaux\relax }}{16}{table.caption.20}%
+\contentsline {table}{\numberline {1.13}{\ignorespaces Types d'actions/activités\relax }}{16}{table.caption.21}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Principaux design patterns par catégorie\relax }}{16}{table.caption.24}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Design pattern Composite\relax }}{17}{table.caption.25}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Design pattern Visitor\relax }}{19}{table.caption.26}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces Design pattern Observer\relax }}{20}{table.caption.27}%
-\contentsline {table}{\numberline {2.5}{\ignorespaces Design pattern Singleton\relax }}{21}{table.caption.28}%
-\contentsline {table}{\numberline {2.6}{\ignorespaces Design pattern Decorator\relax }}{22}{table.caption.29}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Principaux design patterns par catégorie\relax }}{22}{table.caption.34}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Design pattern Composite\relax }}{23}{table.caption.35}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Design pattern Visitor\relax }}{24}{table.caption.36}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Design pattern Observer\relax }}{25}{table.caption.37}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Design pattern Singleton\relax }}{26}{table.caption.38}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Design pattern Decorator\relax }}{27}{table.caption.39}%
 \addvspace {10\p@ }
